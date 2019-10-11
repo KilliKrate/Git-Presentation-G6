@@ -8,7 +8,9 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/myplanet.css">
+		<link rel="stylesheet" href="css/animista.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,14 +27,23 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section data-background-image="http://example.com/image.png" data-background-size="100px" data-background-repeat="repeat">
+					U are faggut
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
 
 		<script src="js/reveal.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
 
 		<script>
+
+			const burst = new mojs.Burst();
+
+			document.addEventListener( 'click', function (e) {
+			burst.replay();
+			});
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
@@ -46,7 +57,9 @@
 				transition: 'slide',
 				transitionSpeed: 'default',
 				backgroundTrasition: 'fade',
-				parallaxBackgroundImage: '',
+				parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				parallaxBackgroundHorizontal: 200,
+				parallaxBackgroundVertical: 50,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
