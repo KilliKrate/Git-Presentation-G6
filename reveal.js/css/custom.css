@@ -135,28 +135,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-  }
-
-html, body {
-  height: 100%;
-  }
-  body {
-    text-align: center;
-    background-color: hsla(230,40%,50%,1);
-    }
-  body:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    height: 100%;
-    }
-
 .shadow h1 {
   display: inline-block;
   color: white;
