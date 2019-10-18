@@ -1,7 +1,4 @@
- consoleText(['git config --global user.name'], 'text',['white']);
-
-
- /* Console Text: https://codepen.io/Tbgse/pen/dYaJyJ */
+/* Console Text: https://codepen.io/Tbgse/pen/dYaJyJ */
  
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -28,3 +25,15 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+/* Event Listeners: Fragments */
+
+Reveal.addEventListener( 'fragmentshown', function( event ) {
+
+  if (event.fragment.id === 'o-1') { 
+    setTimeout(function (){
+      consoleText(['program'], 'text',['white']);
+    }, 500);
+  }
+
+} );
