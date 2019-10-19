@@ -1,88 +1,149 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-		<link rel="stylesheet" href="css/animista.css">
-		<link rel="stylesheet" href="css/custom.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+	<link rel="stylesheet" href="css/Ovidiu.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-						<h5 class="fragment" id="o-1">Say you're writing a <span id='text'></span><div class='console-underscore' id='console'>&#95;</div></h5>
-						<h5 class="fragment">Building a website</h5>
-						<h5 class="fragment">or even writing a short essay</h5>
-				</section>
-				<section>
-					<h3 class="fragment fade-down">In all of these cases...</h3>
-						<svg class="fragment fade-up" style="font-size: 150px;">
-						<symbol id="s-text">
-								<text text-anchor="middle" x="50%" y="50%" dy=".35em">VCS</text>
-							  </symbol>
-							  <use class="text" xlink:href="#s-text" ></use>
-							  <use class="text" xlink:href="#s-text"></use>
-							  <use class="text" xlink:href="#s-text"></use>
-							  <use class="text" xlink:href="#s-text"></use>
-							  <use class="text" xlink:href="#s-text"></use>
-							</svg>
-							<h3 class="fragment fade-down">Is here to help.</h3>
-				</section>
-				<section>
-					<p>The acronym stands for</p>
-					<h5>V<span class="fragment">ersion&nbsp;&nbsp;</span>C<span class="fragment">ontrol&nbsp;&nbsp;</span>S<span class="fragment">ystem</span></h5>
-					<p>Also known as...</p>
-					<h5>R<span class="fragment">evision&nbsp;&nbsp;</span>C<span class="fragment">ontrol&nbsp;&nbsp;</span>S<span class="fragment">ystem</span></h5>
-				</section>
-			</div>
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<div id="typed-strings">
+					<!-- enter custom text below here -->
+					<h3>Revision Control</h3>
+					<h3>Source Control</h3>
+					<h3>Version Control</h3>
+					<!-- enter custom text above here -->
+				</div>
+				<h4>Welcome to <span id="typed"></span></h4>
+
+				<p>
+					<small class="fragment fade-left">by Ovidiu Andrioaia, David Cirdan, Mateias Luciano and Angelo
+						Xia</small>
+				</p>
+				<img style="height: 300px;" src="img/ui.svg" alt="">
+			</section>
+			<section>
+				<h5 class="fragment" id="o-1">Say you're writing a <span id='text'></span>
+					<div class='console-underscore' id='console'>&#95;</div>
+				</h5>
+				<h5 class="fragment">Building a website</h5>
+				<h5 class="fragment">or even writing a short essay</h5>
+			</section>
+			<section>
+				<h3 class="fragment fade-down">In all of these cases...</h3>
+				<svg class="fragment fade-up" style="font-size: 150px;">
+					<symbol id="s-text">
+						<text text-anchor="middle" x="50%" y="50%" dy=".35em">VCS</text>
+					</symbol>
+					<use class="text" xlink:href="#s-text"></use>
+					<use class="text" xlink:href="#s-text"></use>
+					<use class="text" xlink:href="#s-text"></use>
+					<use class="text" xlink:href="#s-text"></use>
+					<use class="text" xlink:href="#s-text"></use>
+				</svg>
+				<h3 class="fragment fade-down" style="margin-top: 20px;">Is here to help.</h3>
+			</section>
+			<section>
+				<p>VCS stands for</p>
+				<h5>V<span class="fragment">ersion&nbsp;&nbsp;</span>C<span
+						class="fragment">ontrol&nbsp;&nbsp;</span>S<span class="fragment">ystem</span></h5>
+				<p>And it's also known as</p>
+				<h5>R<span class="fragment">evision&nbsp;&nbsp;</span>C<span
+						class="fragment">ontrol&nbsp;&nbsp;</span>S<span class="fragment">ystem</span></h5>
+			</section>
+			<section data-state="somestate">
+				<h4>All of your work...</h4>
+				<div class="smoke" id="smoke">
+					<ul>
+						<li>G</li>
+						<li>O</li>
+						<li>N</li>
+						<li>E</li>
+					</ul>
+				</div>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
-		<script src="js/Ovidiu.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/Ovidiu.js"></script>
 
-		<script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			controls: false,
+			controlsTutoral: false,
+			progress: false,
+			slideNumber: false,
+			hash: true,
+			keyboard: true,
+			transition: 'slide',
+			transitionSpeed: 'default',
+			backgroundTrasition: 'fade',
+			parallaxBackgroundImage: '',
+			parallaxBackgroundHorizontal: 200,
+			parallaxBackgroundVertical: 50,
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/title-footer/title-footer.js',
+					async: true,
+					callback: function () {
+						title_footer.initialize(
+							"An overview of Version Control, by Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Angelo Xia"
+						);
+					}
+				},
+				{
+					src: 'plugin/typed/typed.js',
+					async: false,
+					callback: function () {
+						callTypedJs();
+					}
+				}
 
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				controls: false,
-				controlsTutoral: false,
-				progress: false,
-				slideNumber: false,
-				hash: true,
-				keyboard: true,
-				transition: 'slide',
-				transitionSpeed: 'default',
-				backgroundTrasition: 'fade',
-				parallaxBackgroundImage: '',
-				parallaxBackgroundHorizontal: 200,
-				parallaxBackgroundVertical: 50,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+			]
+		});
+	</script>
+</body>
+
 </html>

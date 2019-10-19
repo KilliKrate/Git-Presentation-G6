@@ -1,5 +1,5 @@
 /* Console Text: https://codepen.io/Tbgse/pen/dYaJyJ */
- 
+
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
@@ -9,13 +9,13 @@ function consoleText(words, id, colors) {
   var waiting = false;
   var target = document.getElementById(id)
   target.setAttribute('style', 'color:' + colors[0])
-  window.setInterval(function() {
+  window.setInterval(function () {
     if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
   }, 120)
-  window.setInterval(function() {
+  window.setInterval(function () {
     if (visible === true) {
       con.className = 'console-underscore hidden'
       visible = false;
@@ -28,12 +28,19 @@ function consoleText(words, id, colors) {
 
 /* Event Listeners: Fragments */
 
-Reveal.addEventListener( 'fragmentshown', function( event ) {
+Reveal.addEventListener('fragmentshown', function (event) {
 
-  if (event.fragment.id === 'o-1') { 
-    setTimeout(function (){
-      consoleText(['program'], 'text',['white']);
+  if (event.fragment.id === 'o-1') {
+    setTimeout(function () {
+      consoleText(['program'], 'text', ['white']);
     }, 500);
   }
 
-} );
+});
+
+Reveal.addEventListener('somestate', function () {
+  setTimeout(function () {
+    var d = document.getElementById("smoke");
+    d.className += " smoke-animation";
+  }, 2000);
+}, false);
