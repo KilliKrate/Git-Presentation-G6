@@ -1,11 +1,36 @@
+/* Layout */
+
 .twocolumns {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-  
-.text-justified {
-    text-align: justify;
-    text-justify: auto;
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Effects and colours*/
+
+.color-blue {
+    color: #2962ff;
+}
+
+/* Components */
+
+#typed {
+    display: inline;
 }
 
 .typed-cursor {
@@ -56,62 +81,3 @@
         opacity: 1;
     }
 }
-
-#typed {
-    display: inline;
-}
-
-.smoke ul {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-}
-
-.smoke ul li {
-    list-style: none;
-    font-weight: bold;
-    letter-spacing: 10px;
-    color: #fff;
-    display: inline-block;
-
-}
-
-.smoke-animation ul li {
-    filter: blur(1px);
-    animation: smoke 2s linear forwards;
-}
-
-@keyframes smoke {
-    0% {
-        transform: rotate(0deg) translateY(0px);
-        opacity: 1;
-        filter: blur(1px);
-    }
-
-    100% {
-        transform: rotate(45deg) translateY(-200px);
-        opacity: 0;
-        filter: blur(20px);
-    }
-}
-
-.smoke ul li:nth-child(1) {
-    animation-delay: 0s
-}
-
-.smoke ul li:nth-child(2) {
-    animation-delay: .4s
-}
-
-.smoke ul li:nth-child(3) {
-    animation-delay: .8s
-}
-
-.smoke ul li:nth-child(4) {
-    animation-delay: 1.2s
-}
-
-.smoke ul li:nth-child(5) {
-    animation-delay: 1.6s
-}
-
