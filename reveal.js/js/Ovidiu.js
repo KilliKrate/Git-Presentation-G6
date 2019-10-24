@@ -26,19 +26,38 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
+
 /* Event Listeners: Fragments */
+
+var oshown = [false, false]
 
 Reveal.addEventListener('fragmentshown', function (event) {
 
-  if (event.fragment.id === 'o-1') {
+  if (event.fragment.id === 'o-1' && !oshown[0]) {
     setTimeout(function () {
       consoleText(['program'], 'text', ['white']);
+      oshown[0] = true;
+    }, 500);
+  }
+
+  if (event.fragment.id === 'o-2' && !oshown[1]) {
+    setTimeout(function () {
+    var typed2 = new Typed('#essay', {
+      stringsElement: '#typed-essay',
+      smartBackspace: true,
+      loop: false,
+      startDelay: 500,
+      typeSpeed: 50,
+      backSpeed: 40,
+    });
     }, 500);
   }
 
 });
 
-Reveal.addEventListener('somestate', function () {
+/* Event Listeners: Slides*/
+
+Reveal.addEventListener('gone-slide', function () {
   setTimeout(function () {
     var d = document.getElementById("smoke");
     d.className += " smoke-animation";

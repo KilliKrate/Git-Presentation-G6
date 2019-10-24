@@ -6,16 +6,19 @@
  *   License(s): MIT
  * 
  */
+
 function callTypedJs(){
-	var typed = new Typed('#typed', {
-		stringsElement: '#typed-strings',
+	var typed = new Typed('#title', {
+		stringsElement: '#typed-title',
 		smartBackspace: true,
 		loop: false,
 		startDelay: 500,
 		typeSpeed: 50,
 		backSpeed: 40,
-	});
+	});	
+	
 }
+
 
 /*!
  * 
