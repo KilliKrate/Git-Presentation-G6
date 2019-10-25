@@ -34,88 +34,225 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<div id="typed-title" style="display: none;">
-					<h3>Revision Control</h3>
-					<h3>Source Control</h3>
-					<h3>Version Control</h3>
-				</div>
-				<h4>Welcome to <span id="title"></span></h4>
-				<p><small class="fragment fade-left">by Ovidiu Andrioaia, David Cirdan, Mateias Luciano and Angelo
-						Xia</small></p>
-				<img style="height: 400px;" src="img/ui.svg" alt="">
-			</section>
-			<section>
-				<div id="typed-essay" style="display: none;">
-					<h5>Essay</h5>
-				</div>
-				<h5 class="fragment" id="o-1">Say you're writing a <span id='text'></span>
-					<div class='console-underscore' id='console'>&#95;</div>
-				</h5>
-				<h5 class="fragment">Building a website</h5>
-				<h5 class="fragment" id="o-2">Or even writing a short <span id="essay"></span></h5>
-			</section>
-			<section>
-				<h3 class="fragment fade-down" style="color: #ff3d00;">In all of these cases...</h3>
-				<svg class="fragment fade-up" style="font-size: 150px;">
-					<symbol id="s-text">
-						<text text-anchor="middle" x="50%" y="50%" dy=".35em">VCS</text>
-					</symbol>
-					<use class="text" xlink:href="#s-text"></use>
-					<use class="text" xlink:href="#s-text"></use>
-					<use class="text" xlink:href="#s-text"></use>
-					<use class="text" xlink:href="#s-text"></use>
-					<use class="text" xlink:href="#s-text"></use>
-				</svg>
-				<h3 class="fragment fade-down" style="margin-top: 20px;">Is here to help.</h3>
-			</section>
-			<section>
-				<div class="twocolumns" style="grid-column-gap: 10%;">
-					<div class="centered">
-						<p class="text-right">Version Control helps you manage multiple <span
-								class="shadow-blue">versions</span> of the same unit of
-							information</p>
+				<section>
+					<div id="typed-title" style="display: none;">
+						<h3>Revision Control</h3>
+						<h3>Source Control</h3>
+						<h3>Version Control</h3>
 					</div>
-					<div class="timeline">
-						<div class="timeline__group">
-							<span class="timeline__year">2019</span>
-							<div class="timeline__box">
-								<div class="timeline__date">
-									<span class="timeline__day">23</span>
-									<span class="timeline__month">Oct</span>
-								</div>
-								<div class="timeline__post">
-									<div class="timeline__content">
-										<h4>#1 Bobby Jones - First Commit</h4>
-										<p>Prepared project files, installed node modules...</p>
+					<h4>Welcome to <span id="title"></span></h4>
+					<p><small class="fragment fade-left">by Ovidiu Andrioaia, David Cirdan, Mateias Luciano and Angelo
+							Xia</small></p>
+					<img style="height: 400px;" src="img/ui.svg" alt="">
+				</section>
+				<section>
+					<div id="typed-essay" style="display: none;">
+						<h5>Essay</h5>
+					</div>
+					<h5 class="fragment" id="o-1">Say you're writing a <span id='text'></span>
+						<div class='console-underscore' id='console'>&#95;</div>
+					</h5>
+					<h5 class="fragment">Building a website</h5>
+					<h5 class="fragment" id="o-2">Or even writing a short <span id="essay"></span></h5>
+				</section>
+				<section>
+					<h3 class="fragment fade-down" style="color: #ff3d00;">In all of these cases...</h3>
+					<svg class="fragment fade-up" style="font-size: 150px;">
+						<symbol id="s-text">
+							<text text-anchor="middle" x="50%" y="50%" dy=".35em">VCS</text>
+						</symbol>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+					</svg>
+					<h3 class="fragment fade-down" style="margin-top: 20px;">Is here to help.</h3>
+				</section>
+				<section>
+					<div class="twocolumns" style="grid-column-gap: 10%;">
+						<div class="centered">
+							<p class="text-right">Version Control helps you manage multiple <span
+									class="shadow-blue">versions</span> of the same unit of
+								information</p>
+						</div>
+						<div class="timeline">
+							<div class="timeline__group">
+								<span class="timeline__year">2019</span>
+								<div class="timeline__box">
+									<div class="timeline__date">
+										<span class="timeline__day">23</span>
+										<span class="timeline__month">Oct</span>
+									</div>
+									<div class="timeline__post">
+										<div class="timeline__content">
+											<h4>#1 Bobby Jones - First Commit</h4>
+											<p>Prepared project files, installed node modules...</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="timeline__box">
-								<div class="timeline__date">
-									<span class="timeline__day">24</span>
-									<span class="timeline__month">Oct</span>
-								</div>
-								<div class="timeline__post">
-									<div class="timeline__content">
-										<h4>#2 Mariah Carey - Added css and js</h4>
-										<p>Added function xyz, refactored initial code...</p>
+								<div class="timeline__box">
+									<div class="timeline__date">
+										<span class="timeline__day">24</span>
+										<span class="timeline__month">Oct</span>
+									</div>
+									<div class="timeline__post">
+										<div class="timeline__content">
+											<h4>#2 Mariah Carey - Added css and js</h4>
+											<p>Added function xyz, refactored initial code...</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
+				<section data-state="gone-slide">
+					<h4>All of your work...</h4>
+					<div class="smoke" id="smoke">
+						<ul>
+							<li>G</li>
+							<li>O</li>
+							<li>N</li>
+							<li>E</li>
+						</ul>
+					</div>
+				</section>
 			</section>
-			<section data-state="gone-slide">
-				<h4>All of your work...</h4>
-				<div class="smoke" id="smoke">
-					<ul>
-						<li>G</li>
-						<li>O</li>
-						<li>N</li>
-						<li>E</li>
-					</ul>
-				</div>
+			<section>
+				<h3>SLIDE 2</h3>
+				<h4>Two Main Types of VCS - Georgia Tech - Software Development Process</h4>
+			</section>
+			<section>
+				<h3>SLIDE 3</h3>
+				<h4>"Don'ts" in VCS - Georgia Tech - Software Development Proces</h4>
+			</section>
+			<section>
+				<section>
+					<div style="width: 100%; margin-bottom: 1.5em;">
+						<span class="fragment">Actions</span>
+					</div>
+					<div style="width: 50%; float:left">
+						<span class="fragment">
+							<img src="img/pull.svg"
+								style="height: 250px; border: none; background: none; box-shadow: none;">
+						</span>
+					</div>
+					<div style="width: 50%; float:left">
+						<span class="fragment">
+							<img src="img/push.svg"
+								style="height: 250px; border: none; background: none; box-shadow: none;">
+						</span>
+					</div>
+				</section>
+
+				<section>
+					<span class="fragment">
+						<img src="img/git-collaboration.svg"
+							style="height:500px; border: none; background: none; box-shadow: none;">
+					</span>
+				</section>
+				<section>
+					<span class="fragment">
+						<div style="margin-bottom: 0.5em;">Blame</div>
+					</span>
+					<span class="fragment">
+						<img src="img/github-blame.png"
+							style="width:960px; border: none; background: none; box-shadow:none;">
+					</span>
+				</section>
+			</section>
+			<section>
+				<h3>SLIDE 5</h3>
+				<h4>(PARTE 2) - Intro to Source Control: A Must-Have Tool for Programmers</h4>
+			</section>
+			<section>
+				<h3>SLIDE 6</h3>
+				<h4>(PARTE 1) - VSTS :- What is TFS ( Team foundation server ) ?</h4>
+			</section>
+			<section>
+				<h3>SLIDE 7</h3>
+				<h4>(PARTE 2) - VSTS :- What is TFS ( Team foundation server ) ?</h4>
+			</section>
+			<section>
+				<h3>SLIDE 8</h3>
+				<h4>Git & GitHub Tutorial for Beginners #1 - Why Use Git?</h4>
+			</section>
+			<section>
+				<h3>SLIDE 9</h3>
+				<h4>Git & GitHub Tutorial for Beginners #2 - Installing Git</h4>
+			</section>
+			<section>
+				<h3>SLIDE 10</h3>
+				<h4>Git & GitHub Tutorial for Beginners #3 - How Git Works</h4>
+			</section>
+			<section>
+				<h3>SLIDE 11</h3>
+				<h4>Git & GitHub Tutorial for Beginners #4 - Creating a Repository</h4>
+			</section>
+			<section>
+				<section>
+					<span class="fragment">
+						<div style="margin-bottom: 0.5em;">Staging</div>
+					</span>
+					<span class="fragment">
+						<img src="img/git-staging.svg"
+							style="height:300px; border: none; background: none; box-shadow: none;">
+					</span>
+				</section>
+				<section>
+					<pre><code class="node" data-trim data-line-numbers="4,8-11">
+							import React, { useState } from 'react';
+							function Example() {
+							const [count, setCount] = useState(0);
+								
+							return (
+								&lt;div&gt;
+								&lt;p&gt;You clicked {count} times&lt;/p&gt;
+								&lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+								Click me
+								&lt;/button&gt;
+								&lt;/div&gt;
+								);
+							}
+						</code></pre>
+				</section>
+			</section>
+			<section>
+				<h3>SLIDE 13</h3>
+				<h4>Git & GitHub Tutorial for Beginners #6 - Making Commits</h4>
+			</section>
+			<section>
+				<h3>SLIDE 14</h3>
+				<h4>Git & GitHub Tutorial for Beginners #7 - Undoing Things</h4>
+			</section>
+			<section>
+				<h3>SLIDE 15</h3>
+				<h4>Git & GitHub Tutorial for Beginners #8 - Branches</h4>
+			</section>
+			<section>
+				<h3>SLIDE 16</h3>
+				<h4>Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)</h4>
+			</section>
+			<section>
+				<h3>SLIDE 17</h3>
+				<h4>(PARTE 1) - Git & GitHub Tutorial for Beginners #10 - Introduction to GitHub</h4>
+			</section>
+			<section>
+				<h3>SLIDE 18</h3>
+				<h4>(PARTE 2) - Git & GitHub Tutorial for Beginners #10 - Introduction to GitHub</h4>
+			</section>
+			<section>
+				<h3>SLIDE 19</h3>
+				<h4>(PARTE 1) - Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub</h4>
+			</section>
+			<section>
+				<h3>SLIDE 20</h3>
+				<h4>(PARTE 2) - Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub</h4>
+			</section>
+			<section>
+				<h3>SLIDE 21</h3>
+				<h4>Git & GitHub Tutorial for Beginners #12 - Forking (& Contributing)</h4>
 			</section>
 		</div>
 	</div>
@@ -141,36 +278,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				},
-				{
-					src: 'plugin/title-footer/title-footer.js',
-					async: false,
-					callback: function () {
-						title_footer.initialize(
-							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-						);
-					}
-				},
-				{
-					src: 'plugin/typed/typed.js',
-					async: true,
-					callback: function () {
-						callTypedJs();
-					}
+				src: 'plugin/markdown/marked.js'
+			},
+			{
+				src: 'plugin/markdown/markdown.js'
+			},
+			{
+				src: 'plugin/notes/notes.js',
+				async: true
+			},
+			{
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			},
+			{
+				src: 'plugin/title-footer/title-footer.js',
+				async: false,
+				callback: function () {
+					title_footer.initialize(
+						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+					);
 				}
-
+			},
+			{
+				src: 'plugin/typed/typed.js',
+				async: true,
+				callback: function () {
+					callTypedJs();
+				}
+			}
 			]
 		});
 	</script>
