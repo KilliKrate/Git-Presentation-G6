@@ -47,17 +47,17 @@
 					<img style="height: 400px;" src="img/ui.svg" alt="">
 				</section>
 				<section>
-					<div id="typed-essay" style="display: none;">
+					<div id="o-typed-essay" style="display: none;">
 						<h5>Essay</h5>
 					</div>
-					<h5 class="fragment" id="o-1">Say you're writing a <span id='text'></span>
+					<h5 class="fragment" id="o-1">Say you're writing a <span id='o-program'></span>
 						<div class='console-underscore' id='console'>&#95;</div>
 					</h5>
 					<h5 class="fragment">Building a website</h5>
-					<h5 class="fragment" id="o-2">Or even writing a short <span id="essay"></span></h5>
+					<h5 class="fragment" id="o-2">Or even writing a short <span id="o-essay"></span></h5>
 				</section>
 				<section>
-					<h3 class="fragment fade-down" style="color: #ff3d00;">In all of these cases...</h3>
+					<h3 class="fragment fade-down">In all of these cases...</h3>
 					<svg class="fragment fade-up" style="font-size: 150px;">
 						<symbol id="s-text">
 							<text text-anchor="middle" x="50%" y="50%" dy=".35em">VCS</text>
@@ -73,8 +73,7 @@
 				<section>
 					<div class="twocolumns" style="grid-column-gap: 10%;">
 						<div class="centered">
-							<p class="text-right">Version Control helps you manage multiple <span
-									class="shadow-blue">versions</span> of the same unit of
+							<p class="text-right">Version Control helps you manage multiple versions of the same unit of
 								information</p>
 						</div>
 						<div class="timeline">
@@ -109,14 +108,62 @@
 					</div>
 				</section>
 				<section data-state="gone-slide">
-					<h4>All of your work...</h4>
+					<h4>Without Version Control, you could spend hours wasting your</h4>
 					<div class="smoke" id="smoke">
 						<ul>
-							<li>G</li>
-							<li>O</li>
-							<li>N</li>
+							<li>T</li>
+							<li>I</li>
+							<li>M</li>
 							<li>E</li>
 						</ul>
+					</div>
+				</section>
+				<section>
+					<h5>With Version Control, you can pin down the problem much more easily</h5>
+					<pre><code>
+def sortByVotes():
+Banner('Sort By Votes')
+url = "http://www.command.com/comands/browse/sort-by-votes/json"
+request = urllib2.Request(url)
+response = json.load(urllib2.urlopen(request))
+#print json.dumps(response,indent=2)
+for c in response:
+	print "-" * 60
+	print c['command']
+					</code></pre>
+				</section>
+				<section>
+					<h3>VCS advantages for solo devs:</h3>
+					<div class="threecolumns" style="margin-top: 50px; grid-column-gap: 20px;">
+						<div>
+							<img src="img/versions.png" class="def-img inverted">
+							<p>Archive</p>
+						</div>
+						<div>
+							<img src="img/rollback.png" class="def-img inverted">
+							<p>Compare and recover</p>
+						</div>
+						<div>
+							<img src="img/hdd.png" class="def-img inverted">
+							<p>Conserve disk space</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>VCS advantages for teams:</h3>
+					<div class="threecolumns" style="margin-top: 50px; grid-column-gap: 20px;">
+						<div>
+							<img src="img/historical.png" class="def-img inverted">
+							<p>Historical information</p>
+						</div>
+						<div>
+							<img src="img/sharing.svg" class="def-img inverted">
+							<p>File sharing</p>
+						</div>
+						<div>
+							<img src="img/conversation.png" class="def-img inverted">
+							<p>Enforcing of good practices</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -279,35 +326,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			},
-			{
-				src: 'plugin/markdown/markdown.js'
-			},
-			{
-				src: 'plugin/notes/notes.js',
-				async: true
-			},
-			{
-				src: 'plugin/highlight/highlight.js',
-				async: true
-			},
-			{
-				src: 'plugin/title-footer/title-footer.js',
-				async: false,
-				callback: function () {
-					title_footer.initialize(
-						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-					);
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/title-footer/title-footer.js',
+					async: false,
+					callback: function () {
+						title_footer.initialize(
+							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+						);
+					}
+				},
+				{
+					src: 'plugin/typed/typed.js',
+					async: true,
+					callback: function () {
+						callTypedJs();
+					}
 				}
-			},
-			{
-				src: 'plugin/typed/typed.js',
-				async: true,
-				callback: function () {
-					callTypedJs();
-				}
-			}
 			]
 		});
 	</script>
