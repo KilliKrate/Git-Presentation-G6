@@ -15,7 +15,7 @@
 	<!-- Team's Custom CSS-->
 	<link rel="stylesheet" href="css/effects.css">
 	<link rel="stylesheet" href="css/Ovidiu.css">
-	<link rel="stylesheet" hred="css/Luciano.css">
+	<link rel="stylesheet" href="css/Luciano.css">
 
 
 	<!-- Theme used for syntax highlighting of code -->
@@ -121,15 +121,15 @@
 				<section>
 					<h5>With Version Control, you can pin down the problem much more easily</h5>
 					<pre><code>
-def sortByVotes():
-Banner('Sort By Votes')
-url = "http://www.command.com/comands/browse/sort-by-votes/json"
-request = urllib2.Request(url)
-response = json.load(urllib2.urlopen(request))
-#print json.dumps(response,indent=2)
-for c in response:
-	print "-" * 60
-	print c['command']
+						def sortByVotes():
+							Banner('Sort By Votes')
+							url = "http://www.command.com/comands/browse/sort-by-votes/json"
+							request = urllib2.Request(url)
+							response = json.load(urllib2.urlopen(request))
+							#print json.dumps(response,indent=2)
+							for c in response:
+								print "-" * 60
+								print c['command']
 					</code></pre>
 				</section>
 				<section>
@@ -181,32 +181,58 @@ for c in response:
 						<span class="fragment">Actions</span>
 					</div>
 					<div style="width: 50%; float:left">
-						<span class="fragment">
-							<img src="img/pull.svg"
-								style="height: 250px; border: none; background: none; box-shadow: none;">
-						</span>
+						<img src="img/pull.svg" class="fragment fade-down"
+							style="height: 250px; border: none; background: none; box-shadow: none;">
 					</div>
 					<div style="width: 50%; float:left">
-						<span class="fragment">
-							<img src="img/push.svg"
-								style="height: 250px; border: none; background: none; box-shadow: none;">
-						</span>
+						<img src="img/push.svg" class="fragment fade-up"
+							style="height: 250px; border: none; background: none; box-shadow: none;">
 					</div>
 				</section>
 
 				<section>
-					<span class="fragment">
-						<img src="img/git-collaboration.svg"
-							style="height:500px; border: none; background: none; box-shadow: none;">
-					</span>
+					<h4 class="fragment">Collaboration</h4>
+					<div class="v-wrapper" style="width: 100%">
+						<div class="fragment" id='l-2' style="width: 50%">
+							<img src="img/git-collaboration.svg"
+								style="height:500px; border: none; background: none; box-shadow: none;">
+						</div>
+						<div class="fragment" style="width: 50%">
+							<ul>
+								<li>Backup</li>
+								<li>Log</li>
+								<li>Remote</li>
+								<li>Easy teamwork</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 				<section>
-					<span class="fragment">
-						<div style="margin-bottom: 0.5em;">Blame</div>
-					</span>
+					<h3 class="fragment fade-in-then-semi-out" id="l-1">Let's say...</h3>
+					<pre id="slow" class="fragment"><code class="c" data-trim data-line-numbers="0" id="who-did-what">
+						#include &lt;stdio.h&gt;
+						int main()
+						{
+							printf("Hello, World!");
+							return 0;
+						}
+						</code></pre>
+				</section>
+				<section>
+					<pre class="fragment"><code class="c" data-trim data-line-numbers="0" id="who-did-what">
+						#include &lt;stdio.h&gt;
+						int main()
+						{
+							printf("Hello, World!");
+							return 0;
+						}
+						</code></pre>
+				</section>
+				<section>
+					<h5 class="fragment">Blame</h5>
 					<span class="fragment">
 						<img src="img/github-blame.png"
-							style="width:960px; border: none; background: none; box-shadow:none;">
+							style="border: none; background: none; box-shadow:none; max-width: 100%; max-height: 100%;">
 					</span>
 				</section>
 			</section>
@@ -265,6 +291,9 @@ for c in response:
 							}
 						</code></pre>
 				</section>
+				<section>
+					<div id="graph-container"></div>
+				</section>
 			</section>
 			<section>
 				<h3>SLIDE 13</h3>
@@ -306,8 +335,10 @@ for c in response:
 	</div>
 
 	<script src="js/reveal.js"></script>
-	<script src="js/Ovidiu.js"></script>
 	<script src="js/graph.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/Ovidiu.js"></script>
+	<script src="js/Luciano.js"></script>
 
 	<script>
 		// More info about config & dependencies:
@@ -327,35 +358,35 @@ for c in response:
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				},
-				{
-					src: 'plugin/title-footer/title-footer.js',
-					async: false,
-					callback: function () {
-						title_footer.initialize(
-							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-						);
-					}
-				},
-				{
-					src: 'plugin/typed/typed.js',
-					async: true,
-					callback: function () {
-						callTypedJs();
-					}
+				src: 'plugin/markdown/marked.js'
+			},
+			{
+				src: 'plugin/markdown/markdown.js'
+			},
+			{
+				src: 'plugin/notes/notes.js',
+				async: true
+			},
+			{
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			},
+			{
+				src: 'plugin/title-footer/title-footer.js',
+				async: false,
+				callback: function () {
+					title_footer.initialize(
+						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+					);
 				}
+			},
+			{
+				src: 'plugin/typed/typed.js',
+				async: true,
+				callback: function () {
+					callTypedJs();
+				}
+			}
 			]
 		});
 	</script>
