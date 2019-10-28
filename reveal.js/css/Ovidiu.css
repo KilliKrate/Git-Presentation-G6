@@ -3,6 +3,19 @@
 .twocolumns {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.threecolumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.threecolumns div img {
+    max-width: 100%;
+    max-height: none;
+    height: 200px;
 }
 
 .centered {
@@ -80,4 +93,24 @@
     100% {
         opacity: 1;
     }
+}
+
+/* Terminal */
+
+.terminal-box {
+    background-color: #252724;
+    border-radius: 10px;
+    box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Simple image */
+
+.def-img {
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+.inverted {
+    filter: brightness(0) invert(1)
 }

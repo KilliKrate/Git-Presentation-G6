@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="css/effects.css">
 	<link rel="stylesheet" href="css/Ovidiu.css">
 	<link rel="stylesheet" href="css/David.css">
+	<link rel="stylesheet" href="css/Luciano.css">
+
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/monokai.css">
@@ -46,17 +48,17 @@
 					<img style="height: 400px;" src="img/ui.svg" alt="">
 				</section>
 				<section>
-					<div id="typed-essay" style="display: none;">
+					<div id="o-typed-essay" style="display: none;">
 						<h5>Essay</h5>
 					</div>
-					<h5 class="fragment" id="o-1">Say you're writing a <span id='text'></span>
+					<h5 class="fragment" id="o-1">Say you're writing a <span id='o-program'></span>
 						<div class='console-underscore' id='console'>&#95;</div>
 					</h5>
 					<h5 class="fragment">Building a website</h5>
-					<h5 class="fragment" id="o-2">Or even writing a short <span id="essay"></span></h5>
+					<h5 class="fragment" id="o-2">Or even writing a short <span id="o-essay"></span></h5>
 				</section>
 				<section>
-					<h3 class="fragment fade-down" style="color: #ff3d00;">In all of these cases...</h3>
+					<h3 class="fragment fade-down">In all of these cases...</h3>
 					<svg class="fragment fade-up" style="font-size: 150px;">
 						<symbol id="s-text">
 							<text text-anchor="middle" x="50%" y="50%" dy=".35em">VCS</text>
@@ -72,8 +74,7 @@
 				<section>
 					<div class="twocolumns" style="grid-column-gap: 10%;">
 						<div class="centered">
-							<p class="text-right">Version Control helps you manage multiple <span
-									class="shadow-blue">versions</span> of the same unit of
+							<p class="text-right">Version Control helps you manage multiple versions of the same unit of
 								information</p>
 						</div>
 						<div class="timeline">
@@ -108,14 +109,62 @@
 					</div>
 				</section>
 				<section data-state="gone-slide">
-					<h4>All of your work...</h4>
+					<h4>Without Version Control, you could spend hours wasting your</h4>
 					<div class="smoke" id="smoke">
 						<ul>
-							<li>G</li>
-							<li>O</li>
-							<li>N</li>
+							<li>T</li>
+							<li>I</li>
+							<li>M</li>
 							<li>E</li>
 						</ul>
+					</div>
+				</section>
+				<section>
+					<h5>With Version Control, you can pin down the problem much more easily</h5>
+					<pre><code class="python" data-trim data-line-numbers="1-9">
+						def sortByVotes():
+							Banner('Sort By Votes')
+							url = "http://www.command.com/comands/browse/sort-by-votes/json"
+							request = urllib2.Request(url)
+							response = json.load(urllib2.urlopen(request))
+							#print json.dumps(response,indent=2)
+							for c in response:
+								print "-" * 60
+								print c['command']
+					</code></pre>
+				</section>
+				<section>
+					<h3>VCS advantages for solo devs:</h3>
+					<div class="threecolumns" style="margin-top: 50px; grid-column-gap: 20px;">
+						<div>
+							<img src="img/versions.png" class="def-img inverted">
+							<p>Archive</p>
+						</div>
+						<div>
+							<img src="img/rollback.png" class="def-img inverted">
+							<p>Compare and recover</p>
+						</div>
+						<div>
+							<img src="img/hdd.png" class="def-img inverted">
+							<p>Conserve disk space</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>VCS advantages for teams:</h3>
+					<div class="threecolumns" style="margin-top: 50px; grid-column-gap: 20px;">
+						<div>
+							<img src="img/historical.png" class="def-img inverted">
+							<p>Historical information</p>
+						</div>
+						<div>
+							<img src="img/sharing.svg" class="def-img inverted">
+							<p>File sharing</p>
+						</div>
+						<div>
+							<img src="img/conversation.png" class="def-img inverted">
+							<p>Enforcing of good practices</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -156,32 +205,58 @@
 						<span class="fragment">Actions</span>
 					</div>
 					<div style="width: 50%; float:left">
-						<span class="fragment">
-							<img src="img/pull.svg"
-								style="height: 250px; border: none; background: none; box-shadow: none;">
-						</span>
+						<img src="img/pull.svg" class="fragment fade-down"
+							style="height: 250px; border: none; background: none; box-shadow: none;">
 					</div>
 					<div style="width: 50%; float:left">
-						<span class="fragment">
-							<img src="img/push.svg"
-								style="height: 250px; border: none; background: none; box-shadow: none;">
-						</span>
+						<img src="img/push.svg" class="fragment fade-up"
+							style="height: 250px; border: none; background: none; box-shadow: none;">
 					</div>
 				</section>
 
 				<section>
-					<span class="fragment">
-						<img src="img/git-collaboration.svg"
-							style="height:500px; border: none; background: none; box-shadow: none;">
-					</span>
+					<h4 class="fragment">Collaboration</h4>
+					<div class="v-wrapper" style="width: 100%">
+						<div class="fragment" id='l-2' style="width: 50%">
+							<img src="img/git-collaboration.svg"
+								style="height:500px; border: none; background: none; box-shadow: none;">
+						</div>
+						<div class="fragment" style="width: 50%">
+							<ul>
+								<li>Backup</li>
+								<li>Log</li>
+								<li>Remote</li>
+								<li>Easy teamwork</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 				<section>
-					<span class="fragment">
-						<div style="margin-bottom: 0.5em;">Blame</div>
-					</span>
+					<h3 class="fragment fade-in-then-semi-out" id="l-1">Let's say...</h3>
+					<pre id="slow" class="fragment"><code class="c" data-trim data-line-numbers="0" id="who-did-what">
+						#include &lt;stdio.h&gt;
+						int main()
+						{
+							printf("Hello, World!");
+							return 0;
+						}
+						</code></pre>
+				</section>
+				<section>
+					<pre class="fragment"><code class="c" data-trim data-line-numbers="0" id="who-did-what">
+						#include &lt;stdio.h&gt;
+						int main()
+						{
+							printf("Hello, World!");
+							return 0;
+						}
+						</code></pre>
+				</section>
+				<section>
+					<h5 class="fragment">Blame</h5>
 					<span class="fragment">
 						<img src="img/github-blame.png"
-							style="width:960px; border: none; background: none; box-shadow:none;">
+							style="border: none; background: none; box-shadow:none; max-width: 100%; max-height: 100%;">
 					</span>
 				</section>
 			</section>
@@ -267,6 +342,9 @@
 							}
 						</code></pre>
 				</section>
+				<section>
+					<div id="graph-container"></div>
+				</section>
 			</section>
 			<section>
 				<h3>SLIDE 13</h3>
@@ -308,7 +386,10 @@
 	</div>
 
 	<script src="js/reveal.js"></script>
+	<script src="js/graph.js"></script>
+	<script src="js/script.js"></script>
 	<script src="js/Ovidiu.js"></script>
+	<script src="js/Luciano.js"></script>
 
 	<script>
 		// More info about config & dependencies:
