@@ -2,6 +2,7 @@
 
 var oshown = [false, false];
 var lshown = [false, false];
+var dshown = [false];
 
 Reveal.addEventListener('fragmentshown', function (event) {
 
@@ -47,7 +48,20 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 2000)
     }
 
-
+    if (event.fragment.id === 'd-2') {
+        setTimeout(function () {
+            Reveal.nextFragment();
+            setTimeout(function () {
+                Reveal.nextFragment();
+                setTimeout(function () {
+                    Reveal.nextFragment();
+                    setTimeout(function () {
+                        Reveal.nextFragment();
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    }
 });
 
 /* Event Listeners: Slides*/
@@ -58,3 +72,14 @@ Reveal.addEventListener('gone-slide', function () {
         d.className += " smoke-animation";
     }, 2000);
 }, false);
+
+Reveal.addEventListener('slidechanged', function (event) {
+    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+    if (event.currentSlide.id === 'd-1') {
+        setTimeout(function () {
+            Reveal.next();
+            Reveal.next();
+            dshown[0] = true;
+        }, 3000)
+    }
+});
