@@ -1,22 +1,21 @@
 /* Event Listeners: Fragments */
 
-var oshown = [false, false];
+var oshown = Array(4).fill(false);
 var lshown = [false, false];
-var dshown = [false];
 
 Reveal.addEventListener('fragmentshown', function (event) {
 
     if (event.fragment.id === 'o-1' && !oshown[0]) {
         setTimeout(function () {
-            consoleText(['program'], 'text', ['white']);
+            consoleText(['program'], 'o-program', ['#76ff03'], 500);
             oshown[0] = true;
         }, 500);
     }
 
     if (event.fragment.id === 'o-2' && !oshown[1]) {
         setTimeout(function () {
-            var typed2 = new Typed('#essay', {
-                stringsElement: '#typed-essay',
+            var typed2 = new Typed('#o-essay', {
+                stringsElement: '#o-typed-essay',
                 smartBackspace: true,
                 loop: false,
                 startDelay: 500,
@@ -24,6 +23,21 @@ Reveal.addEventListener('fragmentshown', function (event) {
                 backSpeed: 40,
             });
         }, 500);
+        oshown[1] = true;
+    }
+
+    if (event.fragment.id === "o-3" && !oshown[2]) {
+        setTimeout(function () {
+            var d = document.getElementById("smoke-1");
+            d.className += " smoke-animation";
+        }, 2000);
+    }
+
+    if (event.fragment.id === "o-4" && !oshown[3]) {
+        setTimeout(function () {
+            var d = document.getElementById("smoke-2");
+            d.className += " smoke-animation";
+        }, 3000);
     }
 
     if (event.fragment.id === 'l-1' && !lshown[0]) {
@@ -66,20 +80,10 @@ Reveal.addEventListener('fragmentshown', function (event) {
 
 /* Event Listeners: Slides*/
 
-Reveal.addEventListener('gone-slide', function () {
-    setTimeout(function () {
-        var d = document.getElementById("smoke");
-        d.className += " smoke-animation";
-    }, 2000);
-}, false);
-
-Reveal.addEventListener('slidechanged', function (event) {
+Reveal.addEventListener('tfs-slide', function () {
     // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-    if (event.currentSlide.id === 'd-1') {
-        setTimeout(function () {
-            Reveal.next();
-            Reveal.next();
-            dshown[0] = true;
-        }, 3000)
-    }
+    setTimeout(function () {
+        Reveal.next();
+        Reveal.next();
+    }, 3000)
 });
