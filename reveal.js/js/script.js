@@ -1,13 +1,13 @@
 /* Event Listeners: Fragments */
 
-var oshown = Array(4).fill(false);
+var oshown = Array(10).fill(false);
 var lshown = [false, false];
 
 Reveal.addEventListener('fragmentshown', function (event) {
 
     if (event.fragment.id === 'o-1' && !oshown[0]) {
         setTimeout(function () {
-            consoleText(['program'], 'o-program', ['#76ff03'], 500);
+            consoleText(['program'], 'o-program', ['#76ff03'], 500, 'program');
             oshown[0] = true;
         }, 500);
     }
@@ -38,6 +38,13 @@ Reveal.addEventListener('fragmentshown', function (event) {
             var d = document.getElementById("smoke-2");
             d.className += " smoke-animation";
         }, 3000);
+    }
+
+    if (event.fragment.id === 'o-5' && !oshown[4]) {
+        setTimeout(function () {
+            consoleText(['git init'], 'o-init', ['white'], 500, 'console');
+            oshown[4] = true;
+        }, 500);
     }
 
     if (event.fragment.id === 'l-1' && !lshown[0]) {
