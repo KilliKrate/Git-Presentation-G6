@@ -15,19 +15,13 @@ function writeCode(word, target, color, speed) {
     }, speed)
 }
 
-/* Siema */
-const gitSiema = new Siema({
-    selector: '#gitSiema',
-    duration: 300,
-    loop: true
+/* Simple slider */
+var gitSlider = simpleslider.getSlider({
+    container: document.getElementById('gitSlider')
 })
 
-setInterval(() => gitSiema.next(), 3000)
-
-
 /* Git Graph */
-
-const graphContainer = document.getElementById("graph-container");
+const graphContainer = document.getElementById("branchesGraph");
 
 // Instantiate the graph.
 const gitgraph = GitgraphJS.createGitgraph(graphContainer);
