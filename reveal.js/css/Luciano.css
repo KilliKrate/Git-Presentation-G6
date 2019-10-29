@@ -6,10 +6,12 @@
 #l-1{
     transition: all 0.75s;
 }
+
 #l-2{
     margin-left: 25%;
     transition: all 0.75s ease;
 }
+
 .v-wrapper{
     display: inline-block;
     white-space: nowrap;
@@ -20,6 +22,13 @@
     white-space: normal;
     vertical-align: middle;
 }
+
 .slow{
     transition: all 1s;
+}
+
+.fourcolumns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
 }

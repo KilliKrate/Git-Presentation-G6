@@ -329,6 +329,22 @@
   animation-delay: 1.6s
 }
 
+.smoke ul li:nth-child(6) {
+  animation-delay: 2.0s
+}
+
+.smoke ul li:nth-child(7) {
+  animation-delay: 2.4s
+}
+
+.smoke ul li:nth-child(8) {
+  animation-delay: 2.8s
+}
+
+.smoke ul li:nth-child(9) {
+  animation-delay: 3.2s
+}
+
 /* 3D text effect */
 
 .shadow-blue {

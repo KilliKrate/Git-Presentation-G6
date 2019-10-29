@@ -15,7 +15,17 @@ function writeCode(word, target, color, speed) {
     }, speed)
 }
 
-/* graph */
+/* Siema */
+const gitSiema = new Siema({
+    selector: '#gitSiema',
+    duration: 300,
+    loop: true
+})
+
+setInterval(() => gitSiema.next(), 3000)
+
+
+/* Git Graph */
 
 const graphContainer = document.getElementById("graph-container");
 

@@ -15,6 +15,7 @@
 	<!-- Team's Custom CSS-->
 	<link rel="stylesheet" href="css/effects.css">
 	<link rel="stylesheet" href="css/Ovidiu.css">
+	<link rel="stylesheet" href="css/David.css">
 	<link rel="stylesheet" href="css/Luciano.css">
 
 
@@ -51,10 +52,11 @@
 						<h5>Essay</h5>
 					</div>
 					<h5 class="fragment" id="o-1">Say you're writing a <span id='o-program'></span>
-						<div class='console-underscore' id='console'>&#95;</div>
+						<div class='console-underscore' id='program'>&#95;</div>
 					</h5>
-					<h5 class="fragment">Building a website</h5>
-					<h5 class="fragment" id="o-2">Or even writing a short <span id="o-essay"></span></h5>
+					<h5 class="fragment">Building a <span style="color: #e91e63;"> website </span></h5>
+					<h5 class="fragment" id="o-2">Or even writing a short <span style="color: #6200EE;"
+							id="o-essay"></span></h5>
 				</section>
 				<section>
 					<h3 class="fragment fade-down">In all of these cases...</h3>
@@ -71,80 +73,133 @@
 					<h3 class="fragment fade-down" style="margin-top: 20px;">Is here to help.</h3>
 				</section>
 				<section>
-					<div class="twocolumns" style="grid-column-gap: 10%;">
-						<div class="centered">
-							<p class="text-right">Version Control helps you manage multiple versions of the same unit of
-								information</p>
-						</div>
-						<div class="timeline">
-							<div class="timeline__group">
-								<span class="timeline__year">2019</span>
-								<div class="timeline__box">
-									<div class="timeline__date">
-										<span class="timeline__day">23</span>
-										<span class="timeline__month">Oct</span>
-									</div>
-									<div class="timeline__post">
-										<div class="timeline__content">
-											<h4>#1 Bobby Jones - First Commit</h4>
-											<p>Prepared project files, installed node modules...</p>
-										</div>
+					<h3 class="fragment fade-down">VCS helps you <span style="color: #76ff03;">organize</span> by
+						managing
+						the <span style="color: #e91e63;">versions</span> of your project</h3>
+					<div class="fragment fade-up fivecolumns" style="margin-top: 100px;">
+						<img src="img/folder.png" class="def-img inverted">
+						<img src="img/arrow.jpg" class="def-img inverted">
+						<img src="img/folder.png" class="def-img inverted">
+						<img src="img/arrow.jpg" class="def-img inverted">
+						<img src="img/folder.png" class="def-img inverted">
+					</div>
+				</section>
+				<section>
+					<div>
+						<h3>VCS also helps <span style="color: #e91e63;">team</span> efforts, by handling the <span
+								style="color: #76ff03;">logistics</span> of files</h3>
+					</div>
+					<div class="timeline" style="margin-top: 40px;">
+						<div class="timeline__group">
+							<span class="timeline__year">2019</span>
+							<div class="timeline__box">
+								<div class="timeline__date">
+									<span class="timeline__day">23</span>
+									<span class="timeline__month">Oct</span>
+								</div>
+								<div class="timeline__post">
+									<div class="timeline__content">
+										<h4>#1 Bobby Jones - First Commit</h4>
+										<p>Prepared project files, installed node modules...</p>
 									</div>
 								</div>
-								<div class="timeline__box">
-									<div class="timeline__date">
-										<span class="timeline__day">24</span>
-										<span class="timeline__month">Oct</span>
-									</div>
-									<div class="timeline__post">
-										<div class="timeline__content">
-											<h4>#2 Mariah Carey - Added css and js</h4>
-											<p>Added function xyz, refactored initial code...</p>
-										</div>
+							</div>
+							<div class="timeline__box">
+								<div class="timeline__date">
+									<span class="timeline__day">24</span>
+									<span class="timeline__month">Oct</span>
+								</div>
+								<div class="timeline__post">
+									<div class="timeline__content">
+										<h4>#2 Mariah Carey - Added css and js</h4>
+										<p>Added function xyz, refactored initial code...</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section data-state="gone-slide">
-					<h4>Without Version Control, you could spend hours wasting your</h4>
-					<div class="smoke" id="smoke">
-						<ul>
-							<li>T</li>
-							<li>I</li>
-							<li>M</li>
-							<li>E</li>
-						</ul>
+				<section>
+					<h3>Let's make an example...</h3>
+					<div class="twocolumns" style="margin-top: 60px;">
+						<img class="fragment fade-right" src="img/tetris1.png" class="def-img grid-img"
+							style="height: 400px;">
+						<img class="fragment fade-left" src="img/tetris2.jpg" class="def-img grid-img"
+							style="height: 400px;">
 					</div>
 				</section>
 				<section>
-					<h5>With Version Control, you can pin down the problem much more easily</h5>
-					<pre><code>
-						def sortByVotes():
-							Banner('Sort By Votes')
-							url = "http://www.command.com/comands/browse/sort-by-votes/json"
-							request = urllib2.Request(url)
-							response = json.load(urllib2.urlopen(request))
-							#print json.dumps(response,indent=2)
-							for c in response:
-								print "-" * 60
-								print c['command']
-					</code></pre>
+					<div class="fragment fade-up" id="o-3">
+						<h4>Because of this mistake, Bob lost</h4>
+						<div class="smoke" id="smoke-1">
+							<ul class="pink-list">
+								<li>
+									<h3>H</h3>
+								</li>
+								<li>
+									<h3>O</h3>
+								</li>
+								<li>
+									<h3>U</h3>
+								</li>
+								<li>
+									<h3>R</h3>
+								</li>
+								<li>
+									<h3>S</h3>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="fragment fade-down" id="o-4">
+						<h4>For the same mistake, a company can lose</h4>
+						<div class="smoke" id="smoke-2">
+							<ul class="green-list">
+								<li>
+									<h3>T</h3>
+								</li>
+								<li>
+									<h3>H</h3>
+								</li>
+								<li>
+									<h3>O</h3>
+								</li>
+								<li>
+									<h3>U</h3>
+								</li>
+								<li>
+									<h3>S</h3>
+								</li>
+								<li>
+									<h3>A</h3>
+								</li>
+								<li>
+									<h3>N</h3>
+								</li>
+								<li>
+									<h3>D</h3>
+								</li>
+								<li>
+									<h3>S</h3>
+								</li>
+							</ul>
+						</div>
+						<h4>of dollars</h4>
+					</div>
 				</section>
 				<section>
 					<h3>VCS advantages for solo devs:</h3>
 					<div class="threecolumns" style="margin-top: 50px; grid-column-gap: 20px;">
-						<div>
-							<img src="img/versions.png" class="def-img inverted">
+						<div class="fragment fade-in-then-semi-out">
+							<img src="img/versions.png" class="def-img inverted grid-img" style="height: 200px;">
 							<p>Archive</p>
 						</div>
-						<div>
-							<img src="img/rollback.png" class="def-img inverted">
+						<div class="fragment fade-in-then-semi-out">
+							<img src="img/rollback.png" class="def-img inverted grid-img" style="height: 200px;">
 							<p>Compare and recover</p>
 						</div>
-						<div>
-							<img src="img/hdd.png" class="def-img inverted">
+						<div class="fragment fade-in-then-semi-out">
+							<img src="img/hdd.png" class="def-img inverted grid-img" style="height: 200px;">
 							<p>Conserve disk space</p>
 						</div>
 					</div>
@@ -152,24 +207,47 @@
 				<section>
 					<h3>VCS advantages for teams:</h3>
 					<div class="threecolumns" style="margin-top: 50px; grid-column-gap: 20px;">
-						<div>
-							<img src="img/historical.png" class="def-img inverted">
+						<div class="fragment fade-in-then-semi-out">
+							<img src="img/historical.png" class="def-img inverted grid-img" style="height: 200px;">
 							<p>Historical information</p>
 						</div>
-						<div>
-							<img src="img/sharing.svg" class="def-img inverted">
+						<div class="fragment fade-in-then-semi-out">
+							<img src="img/sharing.svg" class="def-img inverted grid-img" style="height: 200px;">
 							<p>File sharing</p>
 						</div>
-						<div>
-							<img src="img/conversation.png" class="def-img inverted">
+						<div class="fragment fade-in-then-semi-out">
+							<img src="img/conversation.png" class="def-img inverted grid-img" style="height: 200px;">
 							<p>Enforcing of good practices</p>
 						</div>
 					</div>
 				</section>
 			</section>
-			<section>
-				<h3>SLIDE 2</h3>
-				<h4>Two Main Types of VCS - Georgia Tech - Software Development Process</h4>
+			<section data-transition="zoom" data-transition-speed="fast">
+				<section>
+					<div class="container">
+						<div class="left">
+							<h1 class="fragment fade-right">VCS</h2>
+								<p class="fragment fade-left">can be...<p>
+						</div>
+						<div class="right">
+							<h3 class="fragment fade-right" style="color: orange;">CENTRALIZED</h3>
+							<p class="fragment ">or...</p>
+							<h3 class="fragment fade-left" style="color:aqua">DECENTRALIZED</h3>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>In a <span style="color:orange;">CENTRALIZED</span> VCS...</h3>
+					<span class="fragment">
+						<img src="img/centralized.png" style="width: 832px; height:504px ;border: none;">
+					</span>
+				</section>
+				<section>
+					<h3>And in a <span style="color: aqua;">DECENTRALIZED</span> VCS...</h3>
+					<span class="fragment">
+						<img src="img/decentralized.png" style=" width: 900px; height:544px ;border: none;">
+					</span>
+				</section>
 			</section>
 			<section>
 				<section>
@@ -201,12 +279,10 @@
 						<span class="fragment">Actions</span>
 					</div>
 					<div style="width: 50%; float:left">
-						<img src="img/pull.svg" class="fragment fade-down"
-							style="height: 250px; border: none; background: none; box-shadow: none;">
+						<img src="img/pull.svg" class="def-img fragment fade-down" style="height: 250px;">
 					</div>
 					<div style="width: 50%; float:left">
-						<img src="img/push.svg" class="fragment fade-up"
-							style="height: 250px; border: none; background: none; box-shadow: none;">
+						<img src="img/push.svg" class="def-img fragment fade-up" style="height: 250px;">
 					</div>
 				</section>
 
@@ -247,6 +323,7 @@
 							return 0;
 						}
 						</code></pre>
+					<h3 class="fragment">LUCIANO TODO: INSERTIONS DELETIONS</h3>
 				</section>
 				<section>
 					<h5 class="fragment">Blame</h5>
@@ -261,16 +338,73 @@
 				<h4>(PARTE 2) - Intro to Source Control: A Must-Have Tool for Programmers</h4>
 			</section>
 			<section>
-				<h3>SLIDE 6</h3>
-				<h4>(PARTE 1) - VSTS :- What is TFS ( Team foundation server ) ?</h4>
+				<section data-state="tfs-slide">
+					<img src="img/tfs-logo.svg" style="border: none; background: none; box-shadow:none;">
+				</section>
+				<section>
+					<div class="fragment" id="d-2">
+						<h4>What is...</h4><br><br>
+						<h2>
+							<ul style="list-style: none;">
+								<li>T<span style="display: inline-block;" class="fragment fade-down">EAM</span></li>
+								<li>F<span style="display: inline-block;" class="fragment fade-left">OUNDATION</span>
+								</li>
+								<li>S<span style="display: inline-block;" class="fragment fade-up">ERVER</span></li>
+							</ul>
+						</h2>
+					</div>
+				</section>
+				<section>
+					<div class="container" style="grid-column-gap: 10%;">
+						<div class="left">
+							<p style="text-align: left;">
+								<span class="shadow-blue">TFS</span>
+								is a
+								<span style="color:#1de9b6">web application</span>
+								built for software development
+								<span style="color: orange">teams</span>
+								who need a platform that can offer multiple tools,
+								<span style="color:aqua">services</span>
+								and resources for a proper
+								<span style="color:#ff8a80">collaboration</span>.
+							</p>
+						</div>
+						<div class="right">
+							<p>Here goes an image</p>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
 				<h3>SLIDE 7</h3>
 				<h4>(PARTE 2) - VSTS :- What is TFS ( Team foundation server ) ?</h4>
 			</section>
 			<section>
-				<h3>SLIDE 8</h3>
-				<h4>Git & GitHub Tutorial for Beginners #1 - Why Use Git?</h4>
+				<section>
+					<img src="img/git-logo-white.svg" class="fragment"
+						style="border: none; background: none; box-shadow:none; max-width: 100%; max-height: 100%;">
+				</section>
+				<section>
+					<svg class="fragment fade-up" style="font-size: 150px;">
+						<symbol id="s-text">
+							<text text-anchor="middle" x="50%" y="50%" dy=".35em">VCS</text>
+						</symbol>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+						<use class="text" xlink:href="#s-text"></use>
+					</svg>
+				</section>
+				<section>
+					<div id="gitSiema" style="width: 25%; height: 25%;">
+						<div><img src="img/versions.png" class="def-img inverted"></div>
+						<div><img src="img/rollback.png" class="def-img inverted"></div>
+						<div><img src="img/conversation.png" class="def-img inverted"></div>
+						<div><img src="img/sharing.svg" class="def-img inverted"></div>
+					</div>
+					<h5>Luciano TODO: qualcosa di meglio, temporaneo</h5>
+				</section>
 			</section>
 			<section>
 				<h3>SLIDE 9</h3>
@@ -291,8 +425,19 @@
 					</section>
 				</section>
 			<section>
-				<h3>SLIDE 11</h3>
-				<h4>Git & GitHub Tutorial for Beginners #4 - Creating a Repository</h4>
+				<section>
+					<div class="text-left">
+						<h3>To create a repository, just type</h3>
+						<div class="terminal-box fragment fade-down" id="o-5" style="margin-top: 60px;">
+							<h5 style="text-transform: none;"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								</span>
+								<span id="o-init"></span>
+								<div class='console-underscore' id='console'>&#95;</div>
+							</h5>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
 				<section>
@@ -391,6 +536,7 @@ git branch -a "name"
 
 	<script src="js/reveal.js"></script>
 	<script src="js/graph.js"></script>
+	<script src="js/siema.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/Ovidiu.js"></script>
 	<script src="js/Luciano.js"></script>
@@ -413,35 +559,35 @@ git branch -a "name"
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			},
-			{
-				src: 'plugin/markdown/markdown.js'
-			},
-			{
-				src: 'plugin/notes/notes.js',
-				async: true
-			},
-			{
-				src: 'plugin/highlight/highlight.js',
-				async: true
-			},
-			{
-				src: 'plugin/title-footer/title-footer.js',
-				async: false,
-				callback: function () {
-					title_footer.initialize(
-						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-					);
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/title-footer/title-footer.js',
+					async: false,
+					callback: function () {
+						title_footer.initialize(
+							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+						);
+					}
+				},
+				{
+					src: 'plugin/typed/typed.js',
+					async: true,
+					callback: function () {
+						callTypedJs();
+					}
 				}
-			},
-			{
-				src: 'plugin/typed/typed.js',
-				async: true,
-				callback: function () {
-					callTypedJs();
-				}
-			}
 			]
 		});
 	</script>

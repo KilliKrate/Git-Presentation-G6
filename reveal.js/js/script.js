@@ -1,27 +1,49 @@
 /* Event Listeners: Fragments */
 
-var oshown = [false, false];
+var oshown = Array(10).fill(false);
 var lshown = [false, false];
 
 Reveal.addEventListener('fragmentshown', function (event) {
 
     if (event.fragment.id === 'o-1' && !oshown[0]) {
         setTimeout(function () {
-            consoleText(['program'], 'text', ['white']);
+            consoleText(['program'], 'o-program', ['#76ff03'], 500, 'program');
             oshown[0] = true;
         }, 500);
     }
 
     if (event.fragment.id === 'o-2' && !oshown[1]) {
         setTimeout(function () {
-            var typed2 = new Typed('#essay', {
-                stringsElement: '#typed-essay',
+            var typed2 = new Typed('#o-essay', {
+                stringsElement: '#o-typed-essay',
                 smartBackspace: true,
                 loop: false,
                 startDelay: 500,
                 typeSpeed: 50,
                 backSpeed: 40,
             });
+        }, 500);
+        oshown[1] = true;
+    }
+
+    if (event.fragment.id === "o-3" && !oshown[2]) {
+        setTimeout(function () {
+            var d = document.getElementById("smoke-1");
+            d.className += " smoke-animation";
+        }, 2000);
+    }
+
+    if (event.fragment.id === "o-4" && !oshown[3]) {
+        setTimeout(function () {
+            var d = document.getElementById("smoke-2");
+            d.className += " smoke-animation";
+        }, 3000);
+    }
+
+    if (event.fragment.id === 'o-5' && !oshown[4]) {
+        setTimeout(function () {
+            consoleText(['git init'], 'o-init', ['white'], 500, 'console');
+            oshown[4] = true;
         }, 500);
     }
 
@@ -47,14 +69,28 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 2000)
     }
 
-
+    if (event.fragment.id === 'd-2') {
+        setTimeout(function () {
+            Reveal.nextFragment();
+            setTimeout(function () {
+                Reveal.nextFragment();
+                setTimeout(function () {
+                    Reveal.nextFragment();
+                    setTimeout(function () {
+                        Reveal.nextFragment();
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    }
 });
 
 /* Event Listeners: Slides*/
 
-Reveal.addEventListener('gone-slide', function () {
+Reveal.addEventListener('tfs-slide', function () {
+    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
     setTimeout(function () {
-        var d = document.getElementById("smoke");
-        d.className += " smoke-animation";
-    }, 2000);
-}, false);
+        Reveal.next();
+        Reveal.next();
+    }, 3000)
+});
