@@ -1,7 +1,7 @@
 /* Event Listeners: Fragments */
 
 var oshown = Array(10).fill(false);
-var lshown = [false, false];
+var lshown = Array(10).fill(false);
 
 Reveal.addEventListener('fragmentshown', function (event) {
 
@@ -51,22 +51,37 @@ Reveal.addEventListener('fragmentshown', function (event) {
         child = document.createElement('span');
         child.className += 'hljs-title';
         setTimeout(function () {
-            Reveal.nextFragment();
             document.getElementById('who-did-what').append(document.createElement('br'))
             document.getElementById('who-did-what').append(child)
             writeCode('//You want to know who wrote a line of code', child, ['#c2bda5'], 75)
-            oshown[0] = true;
-        }, 1500);
+        }, 500);
         lshown[0] = true;
     }
 
-    if (event.fragment.id === 'l-2' && !lshown[1]) {
+    if (event.fragment.id === 'l-2') {
+        document.getElementById('gitCollaboration').style['width'] = '50%';
+        document.getElementById('gitCollaboration').style['margin-left'] = '0%';
+    }
+
+    if (event.fragment.id === 'l-3' && !lshown[1]) {
         setTimeout(function () {
-            event.fragment.style['margin-left'] = '0%';
-            setTimeout(function () {
-                Reveal.nextFragment()
-            }, 1000)
-        }, 2000)
+            consoleText(['git status'], 'l-status', ['white'], 500, 'console-status');
+            lshown[1] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-4' && !lshown[2]) {
+        setTimeout(function () {
+            consoleText(['git add .'], 'l-add', ['white'], 500, 'console-add');
+            lshown[1] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-5' && !lshown[3]) {
+        setTimeout(function () {
+            consoleText(['git commit'], 'l-commit', ['white'], 500, 'console-commit');
+            lshown[1] = true;
+        }, 500);
     }
 
     if (event.fragment.id === 'd-2') {

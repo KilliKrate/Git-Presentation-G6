@@ -120,6 +120,10 @@
     padding: 20px 20px;
 }
 
+.terminal-box h5 {
+    display: inline;
+}
+
 /* Simple image */
 
 .def-img {
