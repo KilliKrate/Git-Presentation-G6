@@ -472,11 +472,11 @@
 				</section>
 			</section>
 			<section>
-				<section>
+				<section data-state="tfs-slide">
 					<img src="img/tfs-logo.svg" class="def-img">
 				</section>
 				<section>
-					<div class="fragment">
+					<div class="fragment" id="d-2">
 						<h4>What is...</h4><br>
 						<h2>
 							<ul style="list-style: none;">
@@ -687,10 +687,10 @@
 				<section>
 					<div>
 						<h3>To create a repository, just type</h3>
-						<div class="terminal-box fragment fade-down text-left" id="o-5" style="margin-top: 60px;">
-							<h5 style="text-transform: none; margin-top: 15px;"><span
+						<div class="terminal-box fragment fade-down text-left" id="o-5">
+							<h5 style="text-transform: none; display: inline"><span
 									style="color: #76ff03;">bob@group6:
-									<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span><br>$&nbsp;
 								</span>
 								<span id="o-init"></span>
 								<div class='console-underscore' id='console'>&#95;</div>
@@ -715,9 +715,9 @@
 					<div class="text-left">
 						<div class="terminal-box fragment fade-down" id="l-3">
 							<h6 style="text-transform: none; display: inline"><span
-									style="color: #76ff03; font-size: 0.85em">bob@group6:
-									<span style="color: #2196f3;">/Git-G6/reveal.js</span>$ <span
-										style="color:#e91e63;">(master)</span>
+									style="color: #76ff03">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
 								</span>
 								<span id="l-status"></span>
 								<div class='console-underscore' id='console-status'>&#95;</div>
@@ -726,10 +726,12 @@
 					</div>
 				</section>
 				<section>
-					<div class="terminal-box fragment fade-down text-left" id="l-3" style="font-size: 3.25vh">
-						<span style="color: #76ff03;">bob@group6:
-							<span style="color: #2196f3;">/Git-G6/reveal.js</span>$ <span
-								style="color:#e91e63;">(master)</span></span> git status<br><br>
+					<div class="terminal-box fragment fade-down text-left" id="l-3" style="font-size: 3.25vh; margin-top: 0px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+									style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git status
+						</h4><br><br>
 						<span style="letter-spacing: 0.05em;">
 							On branch master<br>
 							<br>
@@ -739,7 +741,7 @@
 							&nbsp;&nbsp;(use "git add &lt;file&gt;..." to update what will be committed)<br><br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</span>
-						<span style="color:#e91e63;">index.html</span><br><br>
+						<span style="color:#f21a28; font-weight: bold">index.html</span><br><br>
 						nothing added to commit but untracked files present (use "git add" to track)
 					</div>
 				</section>
@@ -748,9 +750,9 @@
 					<div class="text-left">
 						<div class="terminal-box fragment fade-down" id="l-4">
 							<h6 style="text-transform: none; display: inline"><span
-									style="color: #76ff03; font-size: 0.85em">bob@group6:
-									<span style="color: #2196f3;">/Git-G6/reveal.js</span>$ <span
-										style="color:#e91e63;">(master)</span>
+									style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
 								</span>
 								<span id="l-add"></span>
 								<div class='console-underscore' id='console-add'>&#95;</div>
@@ -763,9 +765,11 @@
 				</section>
 				<section>
 					<div class="terminal-box fragment fade-down text-left" id="l-3" style="font-size: 3.25vh">
-						<span style="color: #76ff03;">bob@group6:
-							<span style="color: #2196f3;">/Git-G6/reveal.js</span>$ <span
-								style="color:#e91e63;">(master)</span></span> git status<br><br>
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								<span style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git status
+						</h4><br><br>
 						<span style="letter-spacing: 0.05em;">
 							On branch master<br>
 							<br>
@@ -775,7 +779,7 @@
 							&nbsp;&nbsp;(use "git rm --cached &lt;file&gt;..." to unstage)<br><br>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						</span>
-						<span style="color: #76ff03;">index.html</span><br><br>
+						<span style="color: #76ff03; font-weight: bold">index.html</span><br>
 					</div>
 				</section>
 				<sectio
@@ -784,8 +788,8 @@
 						<div class="terminal-box fragment fade-down" id="l-5">
 							<h6 style="text-transform: none; display: inline"><span
 									style="color: #76ff03; font-size: 0.85em">bob@group6:
-									<span style="color: #2196f3;">/Git-G6/reveal.js</span>$ <span
-										style="color:#e91e63;">(master)</span>
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
 								</span>
 								<span id="l-commit"></span>
 								<div class='console-underscore' id='console-commit'>&#95;</div>
@@ -794,7 +798,7 @@
 					</div>
 				</section>
 				<section>
-					<img src="img/git-staging-commit.png" class="fragment def-img" style="height: 325px;">
+					<img src="img/git-staging-commit.png" class="fragment def-img" style="height: 425px;">
 				</section>
 				<section>
 					<pre><code class="node" data-trim data-line-numbers="4,8-11">
@@ -814,7 +818,6 @@
 						</code></pre>
 				</section>
 				<section>
-					<div class="fragment" id="branchesGraph"></div>
 				</section>
 			</section>
 			<section>
