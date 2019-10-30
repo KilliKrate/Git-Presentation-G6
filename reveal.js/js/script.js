@@ -84,28 +84,4 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
-    if (event.fragment.id === 'd-2') {
-        setTimeout(function () {
-            Reveal.nextFragment();
-            setTimeout(function () {
-                Reveal.nextFragment();
-                setTimeout(function () {
-                    Reveal.nextFragment();
-                    setTimeout(function () {
-                        Reveal.nextFragment();
-                    }, 1000)
-                }, 1000)
-            }, 1000)
-        }, 1000)
-    }
-});
-
-/* Event Listeners: Slides*/
-
-Reveal.addEventListener('tfs-slide', function () {
-    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-    setTimeout(function () {
-        Reveal.next();
-        Reveal.next();
-    }, 3000)
 });
