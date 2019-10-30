@@ -257,7 +257,7 @@
 					</div>
 				</section>
 				<section>
-					<h4 style="color: #e91e63;">ADD</h4>
+					<h3>NEVER <span style="color: #e91e63;">ADD</span></h3>
 					<div class="twocolumns" style="margin-top: 50px;">
 						<div class="fragment fade-down">
 							<img src="img/bin.png" class="def-img inverted grid-img" height=250px>
@@ -266,9 +266,10 @@
 							<img src="img/exe.png" class="def-img inverted grid-img" height=250px>
 						</div>
 					</div><br>
-					<h4>INSIDE THE REPOSITORY</h4>
+					<h3>INSIDE THE REPOSITORY</h3>
 				</section>
 				<section>
+					<h3>BECAUSE</h3>
 					<div class="fragment" ;>
 						<div class="threecolumns">
 							<div>
@@ -284,10 +285,10 @@
 						</div>
 					</div><br>
 					<div class="fragment fade-down">
-						<h4 style="display: inline;">That we</h4>
-						<h4 style="color: #76ff03; display: inline;">already
-							<h4 style="display: inline;">have in our</h4>
-							<h4 style="color: #6200EE; display: inline;">repository</h4>
+						<h3>That we
+							<span style="color: #76ff03;">already </span>have in our
+							<span style="color: #6200EE;">repository</span>
+						</h3>
 					</div>
 				</section>
 				<section>
@@ -308,7 +309,7 @@
 				</section>
 				<section>
 					<img src="img/confused.png" class="def-img inverted" height="500px">
-					<h4 class="fragment">Makes everyone confused</h4>
+					<h3 class="fragment">Makes everyone confused</h3>
 				</section>
 			</section>
 			<section>
@@ -566,25 +567,24 @@
 			</section>
 			<section>
 				<section>
-					<h3 style="display: inline;">Git</h3>
-					<h3 style="display: inline; color: #76ff03;">feature</h3><br>
+					<h3>Introduce to Git <span style="color: #76ff03;">feature</span></h3>
 					<img src="img/feature.svg" class="def-img inverted" style="height: 350px;">
 				</section>
 				<section>
-					<h4 style="display: inline; color:#ff8a80; margin-right: 0px;">REPO</h4>
+					<h4><span style="color:#ff8a80;">REPO</span>SITORY</h4>
 					<div class="fragment">
 						<img src="img/container.png" class="def-img inverted" style="height: 350px;">
 						<h4>It's like a container</h4>
 					</div>
 				</section>
 				<section>
-					<h3>IT CAN BE</h3><br>
+					<h3>IT CAN BE</h3>
 					<div class="twocolumns">
-						<div class="fragment">
+						<div class="fragment fade-in-then-semi-out">
 							<h3>LOCAL</h3>
 							<img src="img/hdd.png" class="def-img inverted grid-img" height="300px">
 						</div>
-						<div class="fragment">
+						<div class="fragment fade-in-then-semi-out">
 							<h3>REMOTE</h3><br>
 							<img src="img/website-icon.png" class="def-img inverted grid-img" height="250px">
 						</div>
@@ -615,9 +615,8 @@
 					</div>
 				</section>
 				<section>
-					<h4 style="display: inline;">EVERY FILE HAVE 3</h4>
-					<h4 style="display: inline; color: #76ff03;"> STATUS</h4><br><br>
-					<div class="threecolumns">
+					<h3>EVERY FILE HAVE 3 <span style="color: #76ff03;"> STATUS</span></h3>
+					<div class="threecolumns" style="margin-top: 80px;">
 						<div class="fragment fade-right">
 							<h3 style="color: #e91e63;">MODIFIED</h3>
 						</div>
@@ -631,15 +630,57 @@
 				</section>
 				<section>
 					<h3 style="color: #e91e63;">MODIFIED</h3>
-					<img src="img/modified.PNG" height="150px">
+					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
+									style="color:#e91e63;">(master)</span>$</span> git status<br><br>
+							<span style="letter-spacing: 0.05em;">
+								On branch master<br>
+								<br>
+								Initial commit<br>
+								<br>
+								Changes not stagged for commit:<br>
+								&nbsp;&nbsp;&nbsp;(use "git add &lt;file&gt;..." to update what will be committed)<br>
+								&nbsp;&nbsp;&nbsp;(use "git restore &lt;file&gt;..." to discard changes in working directory<br>
+								y)<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</span>
+							<span style="color:#e91e63;">modified: &nbsp; index.html</span><br><br>
+							nothing added to commit but untracked files present (use "git add" to track)
+						</div>
 				</section>
 				<section>
 					<h3 style="color: #76ff03;">STAGED</h3>
-					<img src="img/staging.PNG" height="125px">
+					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
+									style="color:#e91e63;">(master)</span>$</span> git status<br><br>
+							<span style="letter-spacing: 0.05em;">
+								On branch master<br>
+								<br>
+								Initial commit<br>
+								<br>
+								Changes to be committed:<br>
+								&nbsp;&nbsp;&nbsp;(use "git restore --staged &lt;file&gt;..." to unstage)<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</span>
+							<span style="color: #76ff03;">modified: &nbsp; index.html</span><br><br>
+						</div>
 				</section>
 				<section>
 					<h3>COMMITTED</h3>
-					<img src="img/committed.PNG" height="90px">
+					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
+									style="color:#e91e63;">(master)</span>$</span> git status<br><br>
+							<span style="letter-spacing: 0.05em;">
+								On branch master<br>
+								<br>
+								Initial commit<br>
+								<br>
+								nothing to commit, working tree clean<br>
+							</span>
+						</div>
 				</section>
 			</section>
 			<section>
@@ -737,7 +778,7 @@
 						<span style="color: #76ff03;">index.html</span><br><br>
 					</div>
 				</section>
-				<section>
+				<sectio
 					<h3>Commit files</h3>
 					<div class="text-left">
 						<div class="terminal-box fragment fade-down" id="l-5">
@@ -792,13 +833,24 @@
 			</section>
 			<section>
 				<section>
-					<h3>What are <span style="color: #76ff03;">Branches</span></h3>
+					<h3>What are <span style="color: #2196f3;">Branches</span></h3>
 					<img src="img/branch.png" class="def-img inverted" height="300px">
 				</section>
 				<section>
-					<h3>if you want to test new code</h3>
-					<h3>or</h3>
-					<h3>feature</h3>
+					<h3>MASTER BRANCH</h3>
+					<div class="twocolumns fragment fade-down">
+						<div>
+							<img src="img/master.png" class="def-img inverted grid-img" height="350px">
+						</div>
+						<div>
+							<h3>were code is stable</h3>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>IT'S <span style="color: #76ff03;">PERFECT</span></h3>
+					<h3>if you want to test new <span style="color: #2196f3;">code</span></h3>
+					<h3>or <span style="color: #e91e63;">feature</span></h3>
 
 				</section>
 				<section>
