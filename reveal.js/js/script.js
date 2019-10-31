@@ -3,8 +3,16 @@
 var oshown = Array(10).fill(false);
 var lshown = Array(10).fill(false);
 var dshown = Array(10).fill(false);
+var ashown = Array(10).fill(false);
 
 Reveal.addEventListener('fragmentshown', function (event) {
+
+
+    /*
+
+        OVIDIU
+        
+    */
 
     if (event.fragment.id === 'o-1' && !oshown[0]) {
         setTimeout(function () {
@@ -47,6 +55,13 @@ Reveal.addEventListener('fragmentshown', function (event) {
             oshown[4] = true;
         }, 500);
     }
+
+
+    /*
+
+        LUCIANO
+        
+    */
 
     if (event.fragment.id === 'l-1' && !lshown[0]) {
         child = document.createElement('span');
@@ -92,6 +107,13 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+
+    /*
+
+        DAVID
+        
+    */
+
     if (event.fragment.id === 'd-1' && !dshown[0]) {
         setTimeout(function () {
             var typed3 = new Typed('#commands', {
@@ -104,6 +126,48 @@ Reveal.addEventListener('fragmentshown', function (event) {
             });
         }, 500);
         dshown[0] = true;
+    }
+
+
+    /*
+
+        ANGELO
+        
+    */
+
+    if (event.fragment.id === 'a-1' && !ashown[0]) {
+        setTimeout(function () {
+            consoleText(['git branch new_branch'], 'a-branch-create', ['white'], 500, 'console-branch-create');
+            ashown[0] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'a-2' && !ashown[1]) {
+        setTimeout(function () {
+            consoleText(['git branch checkout new_branch'], 'a-branch-checkout', ['white'], 500, 'console-branch-checkout');
+            ashown[1] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'a-3' && !ashown[2]) {
+        setTimeout(function () {
+            consoleText(['git branch checkout -b new_branch'], 'a-branch-create-checkout', ['white'], 500, 'console-branch-create-checkout');
+            ashown[2] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'a-4' && !ashown[3]) {
+        setTimeout(function () {
+            consoleText(['git branch -d new_branch'], 'a-branch-delete', ['white'], 500, 'console-branch-delete');
+            ashown[3] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'a-5' && !ashown[4]) {
+        setTimeout(function () {
+            consoleText(['git branch -a'], 'a-branch-list', ['white'], 500, 'console-branch-list');
+            ashown[4] = true;
+        }, 500);
     }
 
 });

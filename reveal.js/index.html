@@ -324,8 +324,8 @@
 				</section>
 
 				<section>
-					<h4 class="fragment">Collaboration</h4>
-					<div class="v-wrapper" style="width: 100%">
+					<h3 class="fragment">Collaboration</h3>
+					<div class="v-wrapper" style="width: 100%; margin-top: 30px;">
 						<div class="fragment" id="gitCollaboration" style="width: 50%; margin-left: 25%;">
 							<img src="img/git-collaboration.png" class="def-img" style="height:450px;">
 						</div>
@@ -341,7 +341,8 @@
 					</div>
 				</section>
 				<section>
-					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.75vh; margin-top: 0px">
+					<h3 class="fragment">Diffs</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.75vh; margin-top: 10px">
 						<span style="letter-spacing: 0.05em; font-family: Cascadia Code;">
 							<div style="padding-left: 10px;">
 								&nbsp;#include &lt;stdio.h&gt;<br>
@@ -378,7 +379,7 @@
 						</code></pre>
 				</section>
 				<section>
-					<h5 class="fragment">Blame</h5>
+					<h3 class="fragment">Blame</h3>
 					<span class="fragment">
 						<img src="img/github-blame.png" class="def-img" style="max-width: 100%; max-height: 100%;">
 					</span>
@@ -635,7 +636,7 @@
 					</div>
 				</section>
 				<section>
-					<h3>EVERY FILE HAVE 3 <span style="color: #76ff03;"> STATUS</span></h3>
+					<h3>EVERY FILE HAS 3 <span style="color: #76ff03;">STATUSES</span></h3>
 					<div class="threecolumns" style="margin-top: 80px;">
 						<div class="fragment fade-right">
 							<h3 style="color: #f21a28;">MODIFIED</h3>
@@ -652,7 +653,7 @@
 					<div style="width: 100%; height: 100%">
 						<div class="fragment-stack">
 							<h3 style="color: #f21a28;">MODIFIED</h3>
-							<div class="terminal-box text-left" style="font-size: 3.25vh">
+							<div class="terminal-box text-left" style="font-size: 3.25vh; margin-top: 0px">
 								<span style="color: #76ff03;">bob@group6:
 									<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
 										style="color:#f21a28;">(master)</span>$</span> git status<br><br>
@@ -677,7 +678,7 @@
 				</section>
 				<section>
 					<h3 style="color: #76ff03;">STAGED</h3>
-					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
+					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh; margin-top: 30px">
 						<span style="color: #76ff03;">bob@group6:
 							<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
 								style="color: #f21a28;">(master)</span>$</span> git status<br><br>
@@ -695,7 +696,7 @@
 				</section>
 				<section>
 					<h3>COMMITTED</h3>
-					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
+					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh; margin-top: 30px">
 						<span style="color: #76ff03;">bob@group6:
 							<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
 								style="color:#f21a28;">(master)</span>$</span> git status<br><br>
@@ -772,29 +773,23 @@
 				<section>
 					<h3>Add files to staging area</h3>
 					<div class="fragment-stack">
-						<div class="text-left">
-							<div class="terminal-box fragment fade-in" id="l-4">
-								<h6 style="text-transform: none; display: inline"><span
-										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
-											style="color:#f21a28;">(master)</span><br>$&nbsp;
-									</span>
-									<span id="l-add"></span>
-									<div class='console-underscore' id='console-add'>&#95;</div>
-								</h6>
-							</div>
+						<div class="terminal-box text-left fragment fade-in" id="l-4">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-add"></span>
+								<div class='console-underscore' id='console-add'>&#95;</div>
+							</h6>
 						</div>
-						<div class="text-left">
-							<div class="terminal-box fragment fade-in" id="l-5">
-								<h6 style="text-transform: none; display: inline"><span
-										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
-											style="color:#f21a28;">(master)</span><br>$&nbsp;
-									</span>
-									<span id="l-add-file"></span>
-									<div class='console-underscore' id='console-add-file'>&#95;</div>
-								</h6>
-							</div>
+						<div class="terminal-box text-left fragment fade-in" id="l-5">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-add-file"></span>
+								<div class='console-underscore' id='console-add-file'>&#95;</div>
+							</h6>
 						</div>
 					</div>
 				</section>
@@ -901,40 +896,72 @@
 					<h3 class="fragment" style="color: #76ff03;">ENVIRONMENT</h3>
 				</section>
 				<section>
-					<div class="text-left">
-						<div class="terminal-box" id="l-3">
-							<h style="font-size: 35px;">
-								<span style="color: #76ff03;">bob@group6:
-									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
-									<span style="color:#f21a28;">(master)</span><br>
-									<span class="fragment fade-in-then-semi-out" style="color: white;">
-										<span style="color: #76ff03;">$&nbsp;</span>
-										git branch new_branch
-										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to create</span>
-									</span><br>
-									<span class="fragment fade-in-then-semi-out" style="color: white;">
-										<span style="color: #76ff03;">$&nbsp;</span>
-										git branch checkout new_branch
-										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to switch</span>
-									</span><br>
-									<span class="fragment fade-in-then-semi-out" style="color: white;">
-										<span style="color: #76ff03;">$&nbsp;</span>
-										git branch checkout -b new_branch
-										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// a shortcut for both</span>
-									</span><br>
-									<span class="fragment fade-in-then-semi-out" style="color: white;">
-										<span style="color: #76ff03;">$&nbsp;</span>
-										git branch -d new_branch
-										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// for delete</span>
-									</span><br>
-									<span class="fragment fade-in-then-semi-out" style="color: white;">
-										<span style="color: #76ff03;">$&nbsp;</span>
-										git branch -a
-										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to see all</span>
-									</span><br>
-									</h6>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out" id="a-1">
+							<h6>Create a branch</h6>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="a-branch-create"></span>
+									<div class='console-underscore' id='console-branch-create'>&#95;</div>
+								</h6>
+							</div>
 						</div>
-					</div>
+						<div class="fragment fade-in-then-out" id="a-2">
+							<h6>Switch to another branch</h6>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="a-branch-checkout"></span>
+									<div class='console-underscore' id='console-branch-checkout'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out" id="a-3">
+							<h6>Create and switch to another branch</h6>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="a-branch-create-checkout"></span>
+									<div class='console-underscore' id='console-branch-create-checkout'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out" id="a-4">
+							<h6>Delete a branch</h6>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="a-branch-delete"></span>
+									<div class='console-underscore' id='console-branch-delete'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out" id="a-5">
+							<h6>List branches</h6>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="a-branch-list"></span>
+									<div class='console-underscore' id='console-branch-list'>&#95;</div>
+								</h6>
+							</div>
+						</div>
 				</section>
 			</section>
 			<section>
