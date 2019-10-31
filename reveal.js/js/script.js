@@ -74,14 +74,21 @@ Reveal.addEventListener('fragmentshown', function (event) {
     if (event.fragment.id === 'l-4' && !lshown[2]) {
         setTimeout(function () {
             consoleText(['git add .'], 'l-add', ['white'], 500, 'console-add');
-            lshown[1] = true;
+            lshown[2] = true;
         }, 500);
     }
 
     if (event.fragment.id === 'l-5' && !lshown[3]) {
         setTimeout(function () {
-            consoleText(['git commit'], 'l-commit', ['white'], 500, 'console-commit');
-            lshown[1] = true;
+            consoleText(['git add index.html'], 'l-add-file', ['white'], 500, 'console-add-file');
+            lshown[3] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-6' && !lshown[4]) {
+        setTimeout(function () {
+            consoleText(['git commit -m "First commit"'], 'l-commit', ['white'], 500, 'console-commit');
+            lshown[4] = true;
         }, 500);
     }
 

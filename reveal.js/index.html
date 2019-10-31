@@ -227,7 +227,7 @@
 					<div class="container">
 						<div class="left">
 							<h1 class="fragment fade-right">VCS</h1>
-								<p class="fragment fade-left">can be...<p>
+							<p class="fragment fade-left">can be...<p>
 						</div>
 						<div class="right">
 							<h2 class="fragment fade-right" style="color: orange;">CENTRALIZED</h2>
@@ -314,20 +314,11 @@
 			</section>
 			<section>
 				<section>
-					<h1>E invece</h1>
-					<div class="fragment-stack">
-						<div class="fragment fade-in-then-out">Ciao</div>
-						<div class="fragment fade-in">No, vergognati<br><br>Facio kuelo ke volio</div>
-					</div>
-				</section>
-				<section>
 					<div style="width: 100%; margin-bottom: 1.5em;">
-						<span class="fragment">Actions</span>
+						<h3 class="fragment">Actions</h3>
 					</div>
-					<div style="width: 50%; float:left">
+					<div class="twocolumns">
 						<img src="img/pull.svg" class="def-img fragment fade-down" style="height: 250px;">
-					</div>
-					<div style="width: 50%; float:left">
 						<img src="img/push.svg" class="def-img fragment fade-up" style="height: 250px;">
 					</div>
 				</section>
@@ -350,15 +341,30 @@
 					</div>
 				</section>
 				<section>
-					<pre class="fragment"><code class="c" data-trim data-line-numbers="0">
-						#include &lt;stdio.h&gt;
-						int main()
-						{
-							printf("Hello, World!");
-							return 0;
-						}
-						</code></pre>
-					<h3 class="fragment">LUCIANO TODO: INSERTIONS DELETIONS</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.75vh; margin-top: 0px">
+						<span style="letter-spacing: 0.05em; font-family: Cascadia Code;">
+							<div style="padding-left: 10px;">
+								&nbsp;#include &lt;stdio.h&gt;<br>
+								&nbsp;int main(){
+							</div>
+							<div class="insertion">
+								+&nbsp;&nbsp;&nbsp;&nbsp;char name[32];
+							</div>
+							<div class="insertion">
+								+&nbsp;&nbsp;&nbsp;&nbsp;scanf("%s", &name)
+							</div>
+							<div class="deletion">
+								-&nbsp;&nbsp;&nbsp;&nbsp;printf("It's a me, Mario!")
+							</div>
+							<div class="insertion">
+								+&nbsp;&nbsp;&nbsp;&nbsp;printf("It's a me, %s!", name);
+							</div>
+							<div style="padding-left: 10px;">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+								&nbsp;}
+							</div>
+						</span>
+					</div>
 				</section>
 				<section>
 					<h3 class="fragment fade-in-then-semi-out">Let's say...</h3>
@@ -487,10 +493,13 @@
 						<h3>What is...</h3><br>
 						<h1>
 							<ul style="list-style: none;">
-								<li><span class="shadow-blue">T</span><span style="display: inline-block;" class="fragment fade-down">EAM</span></li>
-								<li><span class="shadow-blue">F</span><span style="display: inline-block;" class="fragment fade-left">OUNDATION</span>
+								<li><span class="shadow-blue">T</span><span style="display: inline-block;"
+										class="fragment fade-down">EAM</span></li>
+								<li><span class="shadow-blue">F</span><span style="display: inline-block;"
+										class="fragment fade-left">OUNDATION</span>
 								</li>
-								<li><span class="shadow-blue">S</span><span style="display: inline-block;" class="fragment fade-up">ERVER</span></li>
+								<li><span class="shadow-blue">S</span><span style="display: inline-block;"
+										class="fragment fade-up">ERVER</span></li>
 							</ul>
 						</h1>
 					</div>
@@ -559,7 +568,8 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="fragment">We have then some <span style="color: #76ff03">essential</span>commands</h2><br>
+					<h2 class="fragment">We have then some <span style="color: #76ff03">essential</span>commands</h2>
+					<br>
 					<!--
 						Mi piacerebbe fare i comandi con l'effetto typrewriter,
 						una alla volta e che magari facciano vedere il
@@ -740,8 +750,7 @@
 					</div>
 				</section>
 				<section>
-					<div class="terminal-box fragment fade-down text-left" id="l-3"
-						style="font-size: 3.25vh; margin-top: 0px">
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.25vh; margin-top: 0px">
 						<h4 style="text-transform: none; display: inline">
 							<span style="color: #76ff03;">bob@group6:
 								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
@@ -762,15 +771,30 @@
 				</section>
 				<section>
 					<h3>Add files to staging area</h3>
-					<div class="text-left">
-						<div class="terminal-box fragment fade-down" id="l-4">
-							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
-									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
-										style="color:#f21a28;">(master)</span><br>$&nbsp;
-								</span>
-								<span id="l-add"></span>
-								<div class='console-underscore' id='console-add'>&#95;</div>
-							</h6>
+					<div class="fragment-stack">
+						<div class="text-left">
+							<div class="terminal-box fragment fade-in" id="l-4">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="l-add"></span>
+									<div class='console-underscore' id='console-add'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="text-left">
+							<div class="terminal-box fragment fade-in" id="l-5">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="l-add-file"></span>
+									<div class='console-underscore' id='console-add-file'>&#95;</div>
+								</h6>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -778,7 +802,7 @@
 					<img src="img/git-staging-add.png" class="fragment def-img" style="height: 325px;">
 				</section>
 				<section>
-					<div class="terminal-box fragment fade-down text-left" id="l-3" style="font-size: 3.25vh">
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.50vh; margin-top: 0px">
 						<h4 style="text-transform: none; display: inline">
 							<span style="color: #76ff03;">bob@group6:
 								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
@@ -799,7 +823,7 @@
 				<section>
 					<h3>Commit files</h3>
 					<div class="text-left">
-						<div class="terminal-box fragment fade-down" id="l-5">
+						<div class="terminal-box fragment fade-down" id="l-6">
 							<h6 style="text-transform: none; display: inline"><span
 									style="color: #76ff03; font-size: 0.85em">bob@group6:
 									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
@@ -812,7 +836,7 @@
 					</div>
 				</section>
 				<section>
-					<img src="img/git-staging-commit.png" class="fragment def-img" style="height: 425px;">
+					<img src="img/git-staging-commit.png" class="fragment def-img" style="height: 475px;">
 				</section>
 				<section>
 					<pre><code class="node" data-trim data-line-numbers="4,8-11">
@@ -881,34 +905,34 @@
 						<div class="terminal-box" id="l-3">
 							<h style="font-size: 35px;">
 								<span style="color: #76ff03;">bob@group6:
-								<span style="color: #2196f3;">/Git-G6/reveal.js</span>
-								<span style="color:#f21a28;">(master)</span><br>
-								<span class="fragment fade-in-then-semi-out" style="color: white;">
-									<span style="color: #76ff03;">$&nbsp;</span>
-									git branch new_branch
-									<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to create</span>
-								</span><br>
-								<span class="fragment fade-in-then-semi-out" style="color: white;">
-									<span style="color: #76ff03;">$&nbsp;</span>
-									git branch checkout new_branch
-									<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to switch</span>
-								</span><br>
-								<span class="fragment fade-in-then-semi-out" style="color: white;">
-									<span style="color: #76ff03;">$&nbsp;</span>
-									git branch checkout -b new_branch
-									<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// a shortcut for both</span>
-								</span><br>
-								<span class="fragment fade-in-then-semi-out" style="color: white;">
-									<span style="color: #76ff03;">$&nbsp;</span>
-									git branch -d new_branch
-									<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// for delete</span>
-								</span><br>
-								<span class="fragment fade-in-then-semi-out" style="color: white;">
-									<span style="color: #76ff03;">$&nbsp;</span>
-									git branch -a
-									<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to see all</span>
-								</span><br>
-							</h6>
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+									<span style="color:#f21a28;">(master)</span><br>
+									<span class="fragment fade-in-then-semi-out" style="color: white;">
+										<span style="color: #76ff03;">$&nbsp;</span>
+										git branch new_branch
+										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to create</span>
+									</span><br>
+									<span class="fragment fade-in-then-semi-out" style="color: white;">
+										<span style="color: #76ff03;">$&nbsp;</span>
+										git branch checkout new_branch
+										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to switch</span>
+									</span><br>
+									<span class="fragment fade-in-then-semi-out" style="color: white;">
+										<span style="color: #76ff03;">$&nbsp;</span>
+										git branch checkout -b new_branch
+										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// a shortcut for both</span>
+									</span><br>
+									<span class="fragment fade-in-then-semi-out" style="color: white;">
+										<span style="color: #76ff03;">$&nbsp;</span>
+										git branch -d new_branch
+										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// for delete</span>
+									</span><br>
+									<span class="fragment fade-in-then-semi-out" style="color: white;">
+										<span style="color: #76ff03;">$&nbsp;</span>
+										git branch -a
+										<span style="color: orange;"> &nbsp;&nbsp;&nbsp;// to see all</span>
+									</span><br>
+									</h6>
 						</div>
 					</div>
 				</section>
@@ -930,8 +954,10 @@
 				<h4>(PARTE 1) - Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub</h4>
 			</section>
 			<section>
-				<h3>SLIDE 20</h3>
-				<h4>(PARTE 2) - Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub</h4>
+				<section>
+					<h3>Merge a <span style="color: #2196f3;">pull</span> request</h3>
+					<img src="img/git-pull-merge.gif" style="height: 475px;">
+				</section>
 			</section>
 			<section>
 				<section>
@@ -943,7 +969,7 @@
 				</section>
 				<section>
 					<div class="fragment">
-						<div class="twocolumns" >
+						<div class="twocolumns">
 							<div>
 								<img src="img/titanic.png" class="def-img grid-img inverted" style="height: 210px;">
 							</div>
@@ -953,7 +979,7 @@
 						</div>
 						<img src="img/fork.png" class="def-img inverted" height="200px">
 					</div>
-					 <br>
+					<br>
 					<img src="img/adidas.webp" class="def-img grid-img inverted" style="height: 150px;">
 				</section>
 				<section>
