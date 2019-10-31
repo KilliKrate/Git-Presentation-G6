@@ -2,6 +2,7 @@
 
 var oshown = Array(10).fill(false);
 var lshown = Array(10).fill(false);
+var dshown = Array(10).fill(false);
 
 Reveal.addEventListener('fragmentshown', function (event) {
 
@@ -82,6 +83,20 @@ Reveal.addEventListener('fragmentshown', function (event) {
             consoleText(['git commit'], 'l-commit', ['white'], 500, 'console-commit');
             lshown[1] = true;
         }, 500);
+    }
+
+    if (event.fragment.id === 'd-1' && !dshown[0]) {
+        setTimeout(function () {
+            var typed3 = new Typed('#commands', {
+                stringsElement: '#typed-commands',
+                smartBackspace: true,
+                loop: false,
+                startDelay: 500,
+                typeSpeed: 50,
+                backSpeed: 40,
+            });
+        }, 500);
+        dshown[0] = true;
     }
 
 });
