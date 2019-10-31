@@ -314,6 +314,13 @@
 			</section>
 			<section>
 				<section>
+					<h1>E invece</h1>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out">Ciao</div>
+						<div class="fragment fade-in">No, vergognati<br><br>Facio kuelo ke volio</div>
+					</div>
+				</section>
+				<section>
 					<div style="width: 100%; margin-bottom: 1.5em;">
 						<span class="fragment">Actions</span>
 					</div>
@@ -329,7 +336,7 @@
 					<h4 class="fragment">Collaboration</h4>
 					<div class="v-wrapper" style="width: 100%">
 						<div class="fragment" id="gitCollaboration" style="width: 50%; margin-left: 25%;">
-							<img src="img/git-collaboration.svg" class="def-img" style="height:500px;">
+							<img src="img/git-collaboration.png" class="def-img" style="height:450px;">
 						</div>
 						<div style="display: none" class="fragment" id="l-2"></div>
 						<div class="fragment" style="width: 50%">
@@ -632,58 +639,64 @@
 					</div>
 				</section>
 				<section>
-					<h3 style="color: #e91e63;">MODIFIED</h3>
-					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
-							<span style="color: #76ff03;">bob@group6:
-								<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
-									style="color:#e91e63;">(master)</span>$</span> git status<br><br>
-							<span style="letter-spacing: 0.05em;">
-								On branch master<br>
-								<br>
-								Initial commit<br>
-								<br>
-								Changes not stagged for commit:<br>
-								&nbsp;&nbsp;&nbsp;(use "git add &lt;file&gt;..." to update what will be committed)<br>
-								&nbsp;&nbsp;&nbsp;(use "git restore &lt;file&gt;..." to discard changes in working directory<br>
-								y)<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							</span>
-							<span style="color:#e91e63;">modified: &nbsp; index.html</span><br><br>
-							nothing added to commit but untracked files present (use "git add" to track)
+					<div style="width: 100%; height: 100%">
+						<div class="fragment-stack">
+							<h3 class="fragment fade-out" style="color: #e91e63;">MODIFIED</h3>
+							<div class="terminal-box text-left fragment fade-in" style="font-size: 3.25vh">
+								<span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
+										style="color:#e91e63;">(master)</span>$</span> git status<br><br>
+								<span style="letter-spacing: 0.05em;">
+									On branch master<br>
+									<br>
+									Initial commit<br>
+									<br>
+									Changes not stagged for commit:<br>
+									&nbsp;&nbsp;&nbsp;(use "git add &lt;file&gt;..." to update what will be
+									committed)<br>
+									&nbsp;&nbsp;&nbsp;(use "git restore &lt;file&gt;..." to discard changes in working
+									directory<br>
+									y)<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span>
+								<span style="color:#e91e63;">modified: &nbsp; index.html</span><br><br>
+								nothing added to commit but untracked files present (use "git add" to track)
+							</div>
 						</div>
+					</div>
 				</section>
 				<section>
 					<h3 style="color: #76ff03;">STAGED</h3>
 					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
-							<span style="color: #76ff03;">bob@group6:
-								<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
-									style="color:#e91e63;">(master)</span>$</span> git status<br><br>
-							<span style="letter-spacing: 0.05em;">
-								On branch master<br>
-								<br>
-								Initial commit<br>
-								<br>
-								Changes to be committed:<br>
-								&nbsp;&nbsp;&nbsp;(use "git restore --staged &lt;file&gt;..." to unstage)<br>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							</span>
-							<span style="color: #76ff03;">modified: &nbsp; index.html</span><br><br>
-						</div>
+						<span style="color: #76ff03;">bob@group6:
+							<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
+								style="color:#e91e63;">(master)</span>$</span> git status<br><br>
+						<span style="letter-spacing: 0.05em;">
+							On branch master<br>
+							<br>
+							Initial commit<br>
+							<br>
+							Changes to be committed:<br>
+							&nbsp;&nbsp;&nbsp;(use "git restore --staged &lt;file&gt;..." to unstage)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</span>
+						<span style="color: #76ff03;">modified: &nbsp; index.html</span><br><br>
+					</div>
 				</section>
 				<section>
 					<h3>COMMITTED</h3>
 					<div class="terminal-box text-left" id="l-3" style="font-size: 3.25vh">
-							<span style="color: #76ff03;">bob@group6:
-								<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
-									style="color:#e91e63;">(master)</span>$</span> git status<br><br>
-							<span style="letter-spacing: 0.05em;">
-								On branch master<br>
-								<br>
-								Initial commit<br>
-								<br>
-								nothing to commit, working tree clean<br>
-							</span>
-						</div>
+						<span style="color: #76ff03;">bob@group6:
+							<span style="color: #2196f3;">/Git-G6/reveal.js</span><span
+								style="color:#e91e63;">(master)</span>$</span> git status<br><br>
+						<span style="letter-spacing: 0.05em;">
+							On branch master<br>
+							<br>
+							Initial commit<br>
+							<br>
+							nothing to commit, working tree clean<br>
+						</span>
+					</div>
 				</section>
 			</section>
 			<section>
@@ -691,8 +704,7 @@
 					<div>
 						<h3>To create a repository, just type</h3>
 						<div class="terminal-box fragment fade-down text-left" id="o-5">
-							<h5 style="text-transform: none; display: inline"><span
-									style="color: #76ff03;">bob@group6:
+							<h5 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
 									<span style="color: #2196f3;">/Git-G6/reveal.js</span><br>$&nbsp;
 								</span>
 								<span id="o-init"></span>
@@ -717,8 +729,7 @@
 					<h3>Display files changed</h3>
 					<div class="text-left">
 						<div class="terminal-box fragment fade-down" id="l-3">
-							<h6 style="text-transform: none; display: inline"><span
-									style="color: #76ff03">bob@group6:
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03">bob@group6:
 									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
 										style="color:#f21a28;">(master)</span><br>$&nbsp;
 								</span>
@@ -729,7 +740,8 @@
 					</div>
 				</section>
 				<section>
-					<div class="terminal-box fragment fade-down text-left" id="l-3" style="font-size: 3.25vh; margin-top: 0px">
+					<div class="terminal-box fragment fade-down text-left" id="l-3"
+						style="font-size: 3.25vh; margin-top: 0px">
 						<h4 style="text-transform: none; display: inline">
 							<span style="color: #76ff03;">bob@group6:
 								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
@@ -752,8 +764,7 @@
 					<h3>Add files to staging area</h3>
 					<div class="text-left">
 						<div class="terminal-box fragment fade-down" id="l-4">
-							<h6 style="text-transform: none; display: inline"><span
-									style="color: #76ff03;">bob@group6:
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
 									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
 										style="color:#f21a28;">(master)</span><br>$&nbsp;
 								</span>
@@ -932,35 +943,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				},
-				{
-					src: 'plugin/title-footer/title-footer.js',
-					async: false,
-					callback: function () {
-						title_footer.initialize(
-							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-						);
-					}
-				},
-				{
-					src: 'plugin/typed/typed.js',
-					async: true,
-					callback: function () {
-						callTypedJs();
-					}
+				src: 'plugin/markdown/marked.js'
+			},
+			{
+				src: 'plugin/markdown/markdown.js'
+			},
+			{
+				src: 'plugin/notes/notes.js',
+				async: true
+			},
+			{
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			},
+			{
+				src: 'plugin/title-footer/title-footer.js',
+				async: false,
+				callback: function () {
+					title_footer.initialize(
+						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+					);
 				}
+			},
+			{
+				src: 'plugin/typed/typed.js',
+				async: true,
+				callback: function () {
+					callTypedJs();
+				}
+			}
 			]
 		});
 	</script>

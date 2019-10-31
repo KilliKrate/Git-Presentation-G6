@@ -17,5 +17,6 @@ function writeCode(word, target, color, speed) {
 
 /* Simple slider */
 var gitSlider = simpleslider.getSlider({
-    container: document.getElementById('gitSlider')
+    container: document.getElementById('gitSlider'),
+    delay: 2.5,
 })
