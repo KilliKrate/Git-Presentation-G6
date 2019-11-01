@@ -149,6 +149,20 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'l-9' && !lshown[7]) {
+        setTimeout(function () {
+            consoleText(['git log'], 'l-log', ['white'], 500, 'console-log');
+            lshown[7] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-10' && !lshown[8]) {
+        setTimeout(function () {
+            consoleText(['git log --oneline'], 'l-log-oneline', ['white'], 500, 'console-log-oneline');
+            lshown[8] = true;
+        }, 500);
+    }
+
 
     /*
 

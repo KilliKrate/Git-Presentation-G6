@@ -878,12 +878,98 @@
 					</div>
 				</section>
 				<section>
-					TODO LUCIANONE AGGIUNGI LOGGONE
-				</section>
-				<section>
 					<img src="img/git-staging-commit.png" class="fragment def-img" style="height: 475px;">
 				</section>
 				<section>
+					<h3>Commit history</h3>
+					<div class="fragment-stack">
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-9">
+							<h6 style="text-transform: none; display: inline"><span
+									style="color: #76ff03; font-size: 0.85em">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-log"></span>
+								<div class='console-underscore' id='console-log'>&#95;</div>
+							</h6>
+						</div>
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-10">
+							<h6 style="text-transform: none; display: inline"><span
+									style="color: #76ff03; font-size: 0.85em">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-log-oneline"></span>
+								<div class='console-underscore' id='console-log-oneline'>&#95;</div>
+							</h6>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h4>Git log</h4>
+					<div class="terminal-box fragment fade-down text-left"
+						style="font-size: 3.25vh; margin-top: 0px; text-overflow: clip; white-space: nowrap; overflow-x: scroll; height: 500px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+									style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git log
+						</h4><br><br>
+						<span style="letter-spacing: 0.03em;">
+							<span class="log-head">commit a76eadced52c727a0562aa4a4e64ae7030f45d97 (
+								<span style="color: #39abf2">HEAD -></span>
+								<span style="color: #76ff03;">master</span>,
+								<span style="color: #f21a28;">origin/master</span>,
+								<span style="color: #f21a28;">origin/HEAD</span> )
+							</span><br>
+							Author: MrLucio &lt;mrlucio@users.noreply.github.com&gt;<br>
+							Date:&nbsp;&nbsp;&nbsp;Fri Nov 1 21:07:26 2019 +0100<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Added slide 15<br><br>
+							<span class="log-head">commit c0e4f733d2cb3c6e9e1d7d6900eee557f2d1d404</span><br>
+							Author: Ovidiu Costin Andrioaia &lt;ovidiu.andrioaia@users.noreply.github.com&gt;<br>
+							Date:&nbsp;&nbsp;&nbsp;Fri Nov 1 20:59:12 2019 +0100<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Added todo<br><br>
+
+							<span class="log-head">commit 0f3ec9eae952115dadfa9550ec8cf256ae24cc86</span><br>
+							Author: Ovidiu Costin Andrioaia &lt;ovidiu.andrioaia@users.noreply.github.com&gt;<br>
+							Date:&nbsp;&nbsp;&nbsp;Fri Nov 1 20:58:26 2019 +0100<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Added slides<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;added images and some style<br>
+						</span>
+					</div>
+				</section>
+				<section>
+					<h4>Git log oneline</h4>
+					<div class="terminal-box fragment fade-down text-left"
+						style="font-size: 3.25vh; margin-top: 0px; text-overflow: clip; white-space: nowrap; overflow-x: scroll; height: 500px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+									style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git log --oneline
+						</h4><br><br>
+						<span style="letter-spacing: 0.03em;">
+							<span class="log-head">a76eadc &nbsp;(
+								<span style="color: #39abf2">HEAD -></span>
+								<span style="color: #76ff03;">master</span>,
+								<span style="color: #f21a28;">origin/master</span>,
+								<span style="color: #f21a28;">origin/HEAD</span> )
+							</span> Added slide 15<br>
+							<span class="log-head">c0e4f73</span> &nbsp;Added todo<br>
+							<span class="log-head">0f3ec9e</span> &nbsp;Added slides added images and some style<br>
+							<span class="log-head">4f5152e</span> &nbsp;Added stuff to david's slides, fixed some
+							bugs<br>
+							<span class="log-head">e73d1e2</span> &nbsp;Fixed styling on slide 9<br>
+							<span class="log-head">365523e</span> &nbsp;Changed slide 14<br>
+							<span class="log-head">2e8d3fa</span> &nbsp;Little change<br>
+							<span class="log-head">7c01e3b</span> &nbsp;Updated slides 4 and 19<br>
+							<span class="log-head">e35a552</span> &nbsp;change terminal color<br>
+							<span class="log-head">151c858</span> &nbsp;angelo slide update<br>
+							<span class="log-head">71035df</span> &nbsp;Merge pull request #3 from
+							MrLucio/react-frontend<br>
+							<span class="log-head">22c39a7</span> &nbsp;new react frontend<br>
+							<span class="log-head">26f7764</span> &nbsp;Changed an image's colors in slide 4<br>
+							<span class="log-head">2f19763</span> &nbsp;Fixed styling issues<br>
+						</span>
+					</div>
 				</section>
 			</section>
 			<section>
