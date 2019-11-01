@@ -563,7 +563,8 @@
 				-->
 				<section>
 					<video src="img/git_download.mov" controls></video>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<div
+						style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 						<h2>That's all we need to do</h2>
 					</div>
 				</section>
@@ -1141,10 +1142,9 @@
 						</div>
 						<div class="fragment fade-in-then-out" id="a-5">
 							<h6>List branches</h6>
-									<span id="a-branch-list"></span>
-									<div class='console-underscore' id='console-branch-list'>&#95;</div>
-								</h6>
-							</div>
+							<span id="a-branch-list"></span>
+							<div class='console-underscore' id='console-branch-list'>&#95;</div>
+							</h6>
 						</div>
 					</div>
 				</section>
@@ -1231,9 +1231,10 @@
 						<img src="img/github.png" class="def-img inverted" style="height: 300px">
 				</section>
 				<section>
-					<h3>Let's make an <span style="color: #69e2ff">example</span></h3>
+					<h3>Let's make an <span style="color: #2196f3">example</span></h3>
 					<div class="fragment">
-						<img src="img/github-example.png" style="background: none; border: none; box-shadow: none; height: 550px;">
+						<img src="img/github-example.png"
+							style="background: none; border: none; box-shadow: none; height: 550px;">
 					</div>
 				</section>
 				<section data-background-video="img/registration.mov">
@@ -1243,26 +1244,30 @@
 					</div>
 				</section>
 				<section>
-					<h3>Now we have <div  class="fragment fade-up" style="display:inline-block; color: #18ffff;">two</div> scenarios...</h3>
+					<h3>Now we have <div class="fragment fade-up" style="display:inline-block; color: #2196f3;">two
+						</div>
+						scenarios...</h3>
 					<div class="twocolumns" style="grid-column-gap:200px; margin-top: 80px;">
 						<div class="fragment fade-right">
-							<img src="img/local.png" class="inverted" style="background: none; border: none; box-shadow: none; height: 300px;" >
+							<img src="img/local.png" class="inverted"
+								style="background: none; border: none; box-shadow: none; height: 300px;">
 							<h5>We <span style="color: #7c4dff">have</span> a local project</h5>
 						</div>
 						<div class="fragment fade-left">
-							<img src="img/noproject.png" style="background: none; border: none; box-shadow: none; height: 300px;">
+							<img src="img/noproject.png"
+								style="background: none; border: none; box-shadow: none; height: 300px;">
 							<h5>We <span style="color: #ff3d00">don't</span> have a project</h5>
 						</div>
 					</div>
 				</section>
 				<section>
-						<h3>
-							<div class="fragment fade-right" style=" display:inline-block; color:#76ff03";>first</div>
-							<div class="fragment fade-left" style="display: inline-block;">case</div>
-						</h3>
-						<div class="fragment">
-							<img src="img/create-repo.PNG" class="def-img" style="height: 500px;">
-						</div>
+					<h3>
+						<div class="fragment fade-right" style=" display:inline-block; color:#76ff03" ;>first</div>
+						<div class="fragment fade-left" style="display: inline-block;">case</div>
+					</h3>
+					<div class="fragment">
+						<img src="img/create-repo.PNG" class="def-img" style="height: 500px;">
+					</div>
 				</section>
 				<section>
 					<h3>And then...</h3>
@@ -1271,18 +1276,18 @@
 							<div class="terminal-box text-left">
 								<h6 style="text-transform: none; display: inline"><span
 										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span> 
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
 										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
 									<span id="d-repo-first"></span>
 									<div class="console-underscore" id="console-repo-first">&#95;</div>
 								</h6>
 							</div>
 						</div>
-						<div class="fragment fade-in-then-out" id="d-6">
+						<div class="fragment fade-in" id="d-6">
 							<div class="terminal-box text-left">
 								<h6 style="text-transform: none; display: inline"><span
 										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span> 
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
 										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
 									<span id="d-repo-second"></span>
 									<div class="console-underscore" id="console-repo-second">&#95;</div>
@@ -1290,6 +1295,9 @@
 							</div>
 						</div>
 					</div>
+				</section>
+				<section>
+					<h3>We can also make an <span style="color: #2196f3;">alias</span> to avoid repeating the URL</h3>
 				</section>
 			</section>
 			<section>
@@ -1366,35 +1374,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			},
-			{
-				src: 'plugin/markdown/markdown.js'
-			},
-			{
-				src: 'plugin/notes/notes.js',
-				async: true
-			},
-			{
-				src: 'plugin/highlight/highlight.js',
-				async: true
-			},
-			{
-				src: 'plugin/title-footer/title-footer.js',
-				async: false,
-				callback: function () {
-					title_footer.initialize(
-						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-					);
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/title-footer/title-footer.js',
+					async: false,
+					callback: function () {
+						title_footer.initialize(
+							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+						);
+					}
+				},
+				{
+					src: 'plugin/typed/typed.js',
+					async: true,
+					callback: function () {
+						callTypedJs();
+					}
 				}
-			},
-			{
-				src: 'plugin/typed/typed.js',
-				async: true,
-				callback: function () {
-					callTypedJs();
-				}
-			}
 			]
 		});
 	</script>
