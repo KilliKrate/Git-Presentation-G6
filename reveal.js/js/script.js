@@ -1,7 +1,7 @@
 /* Event Listeners: Fragments */
 
 var oshown = Array(10).fill(false);
-var lshown = Array(10).fill(false);
+var lshown = Array(20).fill(false);
 var dshown = Array(10).fill(false);
 var ashown = Array(10).fill(false);
 
@@ -163,6 +163,19 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'l-11' && !lshown[9]) {
+        setTimeout(function () {
+            consoleText(['git add .'], 'l-merge-add', ['white'], 500, 'console-merge-add');
+            lshown[9] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-12' && !lshown[10]) {
+        setTimeout(function () {
+            consoleText(['git commit'], 'l-merge-commit', ['white'], 500, 'console-merge-commit');
+            lshown[10] = true;
+        }, 500);
+    }
 
     /*
 
