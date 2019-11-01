@@ -56,6 +56,34 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'o-6' && !oshown[5]) {
+        setTimeout(function () {
+            consoleText(['git checkout [commit_id]'], 'o-checkout', ['white'], 500, 'console-checkout');
+            oshown[5] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-7' && !oshown[6]) {
+        setTimeout(function () {
+            consoleText(['git revert [commit_id]'], 'o-revert', ['white'], 500, 'console-revert');
+            oshown[6] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-8' && !oshown[7]) {
+        setTimeout(function () {
+            consoleText(['git reset [commit_id]'], 'o-reset', ['white'], 500, 'console-reset');
+            oshown[7] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-9' && !oshown[8]) {
+        setTimeout(function () {
+            consoleText(['git reset [commit_id] --hard'], 'o-reset-2', ['white'], 500, 'console-reset-2');
+            oshown[8] = true;
+        }, 500);
+    }
+
 
     /*
 
@@ -107,10 +135,39 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'l-7' && !lshown[5]) {
+        setTimeout(function () {
+            consoleText(['git checkout master'], 'l-merge-checkout', ['white'], 500, 'console-merge-checkout');
+            lshown[5] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-8' && !lshown[6]) {
+        setTimeout(function () {
+            consoleText(['git merge graphicalGUI'], 'l-merge', ['white'], 500, 'console-merge');
+            lshown[6] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-9' && !lshown[7]) {
+        setTimeout(function () {
+            consoleText(['git log'], 'l-log', ['white'], 500, 'console-log');
+            lshown[7] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-10' && !lshown[8]) {
+        setTimeout(function () {
+            consoleText(['git log --oneline'], 'l-log-oneline', ['white'], 500, 'console-log-oneline');
+            lshown[8] = true;
+        }, 500);
+    }
+
 
     /*
 
         DAVID
+
     */
 
     if (event.fragment.id === 'd-2' && !dshown[1]) {

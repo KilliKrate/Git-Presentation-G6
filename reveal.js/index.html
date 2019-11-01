@@ -287,7 +287,7 @@
 					<div class="fragment fade-down">
 						<h3>That we
 							<span style="color: #76ff03;">already </span>have in our
-							<span style="color: #6200EE;">repository</span>
+							<span style="color: #e91e63;">repository</span>
 						</h3>
 					</div>
 				</section>
@@ -881,23 +881,95 @@
 					<img src="img/git-staging-commit.png" class="fragment def-img" style="height: 475px;">
 				</section>
 				<section>
-					<pre><code class="node" data-trim data-line-numbers="4,8-11">
-							import React, { useState } from 'react';
-							function Example() {
-							const [count, setCount] = useState(0);
-								
-							return (
-								&lt;div&gt;
-								&lt;p&gt;You clicked {count} times&lt;/p&gt;
-								&lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-								Click me
-								&lt;/button&gt;
-								&lt;/div&gt;
-								);
-							}
-						</code></pre>
+					<h3>Commit history</h3>
+					<div class="fragment-stack">
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-9">
+							<h6 style="text-transform: none; display: inline"><span
+									style="color: #76ff03; font-size: 0.85em">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-log"></span>
+								<div class='console-underscore' id='console-log'>&#95;</div>
+							</h6>
+						</div>
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-10">
+							<h6 style="text-transform: none; display: inline"><span
+									style="color: #76ff03; font-size: 0.85em">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-log-oneline"></span>
+								<div class='console-underscore' id='console-log-oneline'>&#95;</div>
+							</h6>
+						</div>
+					</div>
 				</section>
 				<section>
+					<h4>Git log</h4>
+					<div class="terminal-box fragment fade-down text-left"
+						style="font-size: 3.25vh; margin-top: 0px; text-overflow: clip; white-space: nowrap; overflow-x: scroll; height: 500px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+									style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git log
+						</h4><br><br>
+						<span style="letter-spacing: 0.03em;">
+							<span class="log-head">commit a76eadced52c727a0562aa4a4e64ae7030f45d97 (
+								<span style="color: #39abf2">HEAD -></span>
+								<span style="color: #76ff03;">master</span>,
+								<span style="color: #f21a28;">origin/master</span>,
+								<span style="color: #f21a28;">origin/HEAD</span> )
+							</span><br>
+							Author: MrLucio &lt;mrlucio@users.noreply.github.com&gt;<br>
+							Date:&nbsp;&nbsp;&nbsp;Fri Nov 1 21:07:26 2019 +0100<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Added slide 15<br><br>
+							<span class="log-head">commit c0e4f733d2cb3c6e9e1d7d6900eee557f2d1d404</span><br>
+							Author: Ovidiu Costin Andrioaia &lt;ovidiu.andrioaia@users.noreply.github.com&gt;<br>
+							Date:&nbsp;&nbsp;&nbsp;Fri Nov 1 20:59:12 2019 +0100<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Added todo<br><br>
+
+							<span class="log-head">commit 0f3ec9eae952115dadfa9550ec8cf256ae24cc86</span><br>
+							Author: Ovidiu Costin Andrioaia &lt;ovidiu.andrioaia@users.noreply.github.com&gt;<br>
+							Date:&nbsp;&nbsp;&nbsp;Fri Nov 1 20:58:26 2019 +0100<br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;Added slides<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;added images and some style<br>
+						</span>
+					</div>
+				</section>
+				<section>
+					<h4>Git log oneline</h4>
+					<div class="terminal-box fragment fade-down text-left"
+						style="font-size: 3.25vh; margin-top: 0px; text-overflow: clip; white-space: nowrap; overflow-x: scroll; height: 500px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+									style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git log --oneline
+						</h4><br><br>
+						<span style="letter-spacing: 0.03em;">
+							<span class="log-head">a76eadc &nbsp;(
+								<span style="color: #39abf2">HEAD -></span>
+								<span style="color: #76ff03;">master</span>,
+								<span style="color: #f21a28;">origin/master</span>,
+								<span style="color: #f21a28;">origin/HEAD</span> )
+							</span> Added slide 15<br>
+							<span class="log-head">c0e4f73</span> &nbsp;Added todo<br>
+							<span class="log-head">0f3ec9e</span> &nbsp;Added slides added images and some style<br>
+							<span class="log-head">4f5152e</span> &nbsp;Added stuff to david's slides, fixed some
+							bugs<br>
+							<span class="log-head">e73d1e2</span> &nbsp;Fixed styling on slide 9<br>
+							<span class="log-head">365523e</span> &nbsp;Changed slide 14<br>
+							<span class="log-head">2e8d3fa</span> &nbsp;Little change<br>
+							<span class="log-head">7c01e3b</span> &nbsp;Updated slides 4 and 19<br>
+							<span class="log-head">e35a552</span> &nbsp;change terminal color<br>
+							<span class="log-head">151c858</span> &nbsp;angelo slide update<br>
+							<span class="log-head">71035df</span> &nbsp;Merge pull request #3 from
+							MrLucio/react-frontend<br>
+							<span class="log-head">22c39a7</span> &nbsp;new react frontend<br>
+							<span class="log-head">26f7764</span> &nbsp;Changed an image's colors in slide 4<br>
+							<span class="log-head">2f19763</span> &nbsp;Fixed styling issues<br>
+						</span>
+					</div>
 				</section>
 			</section>
 			<section>
@@ -907,12 +979,83 @@
 					<h1 style="color: #76ff03;" class="fragment fade-up">COMMIT</h1>
 				</section>
 				<section>
-					<img src="img/commit.png" style="height: 500px">
+					<img src="img/git-graph-commit.png" class="fragment def-img" style="height: 550px">
 				</section>
 			</section>
 			<section>
-				<h3>SLIDE 14</h3>
-				<h4>Git & GitHub Tutorial for Beginners #7 - Undoing Things</h4>
+				<section>
+					<h4>Git offers various commands for <span>going back</span></h4>
+					<div class="threecolumns" style="margin-top: 60px;">
+						<div class=" word-box" style="background-color: #76ff03; width: 230px;">
+							<p>Checkout</p>
+						</div>
+						<div class="word-box" style="background-color: #ffea00; width: 230px;">
+							<p>Revert</p>
+						</div>
+						<div class="word-box" style="background-color: #f21a28; width: 230px;">
+							<p>Reset</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3 style="color: #76ff03;">Checkout</h3>
+					<img src="img/checkout.svg" class="def-img" height="400px" style="margin-top: 60px;">
+				</section>
+				<section>
+					<h3 style="color: #76ff03;">Checkout</h3>
+					<div class="terminal-box text-left fragment fade-down" id="o-6">
+						<h6 style="text-transform: none; display: inline"><span style="color: #76ff03">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+									style="color:#f21a28;">(master)</span><br>$&nbsp;
+							</span>
+							<span id="o-checkout"></span>
+							<div class='console-underscore' id='console-checkout'>&#95;</div>
+						</h6>
+					</div>
+				</section>
+				<section>
+					<h3 style=" color: #ffea00;">Revert</h3>
+					<img src="img/revert.svg" class="def-img" height="400px" style="margin-top: 60px;">
+				</section>
+				<section>
+					<h3 style=" color: #ffea00;">Revert</h3>
+					<div class="terminal-box text-left fragment fade-down" id="o-7">
+						<h6 style="text-transform: none; display: inline"><span style="color: #76ff03">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+									style="color:#f21a28;">(master)</span><br>$&nbsp;
+							</span>
+							<span id="o-revert"></span>
+							<div class='console-underscore' id='console-revert'>&#95;</div>
+						</h6>
+					</div>
+				</section>
+				<section>
+					<h3 style="color: #f21a28;">Reset</h3>
+					<img src="img/reset.svg" class="def-img" height="400px" style="margin-top: 60px;">
+				</section>
+				<section>
+					<h3 style="color: #f21a28;">Reset</h3>
+					<div class="fragment-stack">
+						<div class="terminal-box text-left fragment fade-in-then-out" id="o-8">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="o-reset"></span>
+								<div class='console-underscore' id='console-reset'>&#95;</div>
+							</h6>
+						</div>
+						<div class="terminal-box text-left fragment fade-in-then-out" id="o-9">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="o-reset-2"></span>
+								<div class='console-underscore' id='console-reset-2'>&#95;</div>
+							</h6>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
 				<section>
@@ -1003,11 +1146,82 @@
 								</h6>
 							</div>
 						</div>
+					</div>
+				</section>
+				<section>
+					<img src="img/git-graph-branch.png" class="fragment def-img" style="height: 600px;">
 				</section>
 			</section>
 			<section>
-				<h3>SLIDE 16</h3>
-				<h4>Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)</h4>
+				<section>
+					<h3>
+						Merging <span style="color: #2196f3;">branches</span> is <span
+							style="color: #76ff03;">easy</span>
+					</h3>
+					<img src="img/merging.png" class="def-img inverted" style="height: 400px; margin-top: 30px">
+				</section>
+				<section>
+					<img src="img/git-graph-merge.png" class="fragment def-img" style="height: 580px;">
+				</section>
+				<section>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out" id="l-7">
+							<div class="terminal-box text-left" style="margin-top: 0px">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(graphicalGUI)</span><br>$&nbsp;
+									</span>
+									<span id="l-merge-checkout"></span>
+									<div class='console-underscore' id='console-merge-checkout'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out" id="l-8">
+							<div class="terminal-box text-left" style="margin-top: 0px">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="l-merge"></span>
+									<div class='console-underscore' id='console-merge'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Automatic merge</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.50vh; margin-top: 60px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								<span style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git merge graphicalGUI
+						</h4><br><br>
+						<span style="letter-spacing: 0.05em;">
+							Merge made by the 'recursive' strategy<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;style.css | 2 <span style="color: #b7f8ab">+</span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;1 file changed, 2 insertions(+)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;create mode 100644 graphicalGUI<br>
+						</span>
+					</div>
+				</section>
+				<section>
+					<h3>Manual merge</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.50vh; margin-top: 30px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								<span style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git merge graphicalGUI
+						</h4><br><br>
+						<span style="letter-spacing: 0.05em;">
+							Auto-merging style.css<br><br>
+							CONFLICT (content): Merge conflict in styles.css<br><br>
+							Automatic merge failed; fix conflicts and then commit the result<br>
+						</span>
+					</div>
+				</section>
 			</section>
 			<section>
 				<section>
@@ -1129,7 +1343,6 @@
 	</div>
 
 	<script src="js/reveal.js"></script>
-	<script src="js/graph.js"></script>
 	<script src="js/simpleslider.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/Ovidiu.js"></script>
@@ -1153,35 +1366,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				},
-				{
-					src: 'plugin/title-footer/title-footer.js',
-					async: false,
-					callback: function () {
-						title_footer.initialize(
-							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-						);
-					}
-				},
-				{
-					src: 'plugin/typed/typed.js',
-					async: true,
-					callback: function () {
-						callTypedJs();
-					}
+				src: 'plugin/markdown/marked.js'
+			},
+			{
+				src: 'plugin/markdown/markdown.js'
+			},
+			{
+				src: 'plugin/notes/notes.js',
+				async: true
+			},
+			{
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			},
+			{
+				src: 'plugin/title-footer/title-footer.js',
+				async: false,
+				callback: function () {
+					title_footer.initialize(
+						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+					);
 				}
+			},
+			{
+				src: 'plugin/typed/typed.js',
+				async: true,
+				callback: function () {
+					callTypedJs();
+				}
+			}
 			]
 		});
 	</script>
