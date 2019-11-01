@@ -133,6 +133,18 @@ Reveal.addEventListener('fragmentshown', function (event) {
             dshown[3] = true;
         }, 500);
     }
+    if (event.fragment.id === 'd-5' && !dshown[4]) {
+        setTimeout(function () {
+            consoleText(['git status'], 'd-repo-first', ['white'], 500, 'console-repo-first');
+            dshown[4] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-6' && !dshown[5]) {
+        setTimeout(function () {
+            consoleText(['git push [URL] master'], 'd-repo-second', ['white'], 500, 'console-repo-second');
+            dshown[5] = true;
+        }, 500);
+    }
 
 
 
