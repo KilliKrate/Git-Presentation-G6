@@ -301,10 +301,10 @@
 							<img src="img/exe.png" class="def-img inverted grid-img" height=250px>
 						</div>
 					</div><br>
-					<h3>LOCAL</h3>
+					<h3>FILES LOCAL</h3>
 				</section>
 				<section>
-					<h3><span style="color: #f21a28;">SAVE</span> LOCAL COPIES</h3>
+					<h3>NEVER <span style="color: #f21a28;">SAVE</span> LOCAL COPIES</h3>
 					<img src="img/copies.png" class="def-img inverted" height="350px">
 				</section>
 				<section>
@@ -490,7 +490,7 @@
 					<img src="img/tfs-logo.svg" class="def-img">
 				</section>
 				<section>
-					<div class="fragment" id="d-2">
+					<div class="fragment">
 						<h3>What is...</h3><br>
 						<h1>
 							<ul style="list-style: none;">
@@ -568,21 +568,43 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="fragment">We have then some <span style="color: #76ff03">essential</span>commands</h2>
-					<br>
+					<h4 class="fragment">We then have some <span style="color: #76ff03">essential</span> commands</h4>
 					<!--
 						Mi piacerebbe fare i comandi con l'effetto typrewriter,
 						una alla volta e che magari facciano vedere il
 						risultato dell'azione (?)
 					-->
-					<div id="typed-commands" style="display: none;">
-						<h5>git --version</h5>
-						<h5>git config --global user.name bob</h5>
-						<h5>git config user.name</h5>
+					<div class="fragment-stack">
+						<div class="terminal-box text-left fragment fade-in-then-out" id="d-2">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="d-version"></span>
+								<div class='console-underscore' id='console-version'>&#95;</div>
+							</h6>
+						</div>
+						<div class="terminal-box text-left fragment fade-in-then-out" id="d-3"
+							style="box-shadow: none;">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="d-config-u-bob"></span>
+								<div class='console-underscore' id='console-config-u-bob'>&#95;</div>
+							</h6>
+						</div>
+						<div class="terminal-box text-left fragment fade-in-then-out" id="d-4"
+							style="box-shadow: none;">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="d-config-u"></span>
+								<div class='console-underscore' id='console-config-u'>&#95;</div>
+							</h6>
+						</div>
 					</div>
-
-					<h5 class="fragment" id="d-1"><span id="commands"></span></h5>
-
 				</section>
 			</section>
 			<section>
@@ -798,7 +820,7 @@
 				<section>
 					<h3>Add files to staging area</h3>
 					<div class="fragment-stack">
-						<div class="terminal-box text-left fragment fade-in" id="l-4">
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-4">
 							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
 									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
 										style="color:#f21a28;">(master)</span><br>$&nbsp;
@@ -807,7 +829,7 @@
 								<div class='console-underscore' id='console-add'>&#95;</div>
 							</h6>
 						</div>
-						<div class="terminal-box text-left fragment fade-in" id="l-5">
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-5">
 							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
 									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
 										style="color:#f21a28;">(master)</span><br>$&nbsp;
@@ -1072,35 +1094,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			},
-			{
-				src: 'plugin/markdown/markdown.js'
-			},
-			{
-				src: 'plugin/notes/notes.js',
-				async: true
-			},
-			{
-				src: 'plugin/highlight/highlight.js',
-				async: true
-			},
-			{
-				src: 'plugin/title-footer/title-footer.js',
-				async: false,
-				callback: function () {
-					title_footer.initialize(
-						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-					);
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/title-footer/title-footer.js',
+					async: false,
+					callback: function () {
+						title_footer.initialize(
+							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+						);
+					}
+				},
+				{
+					src: 'plugin/typed/typed.js',
+					async: true,
+					callback: function () {
+						callTypedJs();
+					}
 				}
-			},
-			{
-				src: 'plugin/typed/typed.js',
-				async: true,
-				callback: function () {
-					callTypedJs();
-				}
-			}
 			]
 		});
 	</script>

@@ -111,22 +111,29 @@ Reveal.addEventListener('fragmentshown', function (event) {
     /*
 
         DAVID
-        
     */
 
-    if (event.fragment.id === 'd-1' && !dshown[0]) {
+    if (event.fragment.id === 'd-2' && !dshown[1]) {
         setTimeout(function () {
-            var typed3 = new Typed('#commands', {
-                stringsElement: '#typed-commands',
-                smartBackspace: true,
-                loop: false,
-                startDelay: 500,
-                typeSpeed: 50,
-                backSpeed: 40,
-            });
+            consoleText(['git --version'], 'd-version', ['white'], 500, 'console-version');
+            dshown[1] = true;
         }, 500);
-        dshown[0] = true;
     }
+
+    if (event.fragment.id === 'd-3' && !dshown[2]) {
+        setTimeout(function () {
+            consoleText(['git config --global user.name bob'], 'd-config-u-bob', ['white'], 500, 'console-config-u-bob');
+            dshown[2] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'd-4' && !dshown[3]) {
+        setTimeout(function () {
+            consoleText(['git config user.name'], 'd-config-u', ['white'], 500, 'console-config-u');
+            dshown[3] = true;
+        }, 500);
+    }
+
 
 
     /*
