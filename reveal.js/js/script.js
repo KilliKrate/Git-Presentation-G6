@@ -202,6 +202,24 @@ Reveal.addEventListener('fragmentshown', function (event) {
             dshown[5] = true;
         }, 500);
     }
+    if (event.fragment.id === 'd-7' && !dshown[6]) {
+        setTimeout(function () {
+            consoleText(['git pull origin master'], 'd-pull', ['white'], 500, 'console-pull');
+            dshown[6] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-8' && !dshown[7]) {
+        setTimeout(function () {
+            consoleText(['git checkout -b my_branch'], 'd-branch', ['white'], 500, 'console-branch');
+            dshown[7] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-9' && !dshown[8]) {
+        setTimeout(function () {
+            consoleText(['git push origin my_branch'], 'd-push', ['white'], 500, 'console-push');
+            dshown[9] = true;
+        }, 500);
+    }
 
 
 
