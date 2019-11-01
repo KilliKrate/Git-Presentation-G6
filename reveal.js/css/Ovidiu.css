@@ -139,3 +139,17 @@
 .inverted {
     filter: brightness(0) invert(1)
 }
+
+/* Commit, Revert and Reset */
+
+.word-box {
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.3);
+}
+
+.word-box>p {
+    color: #303030;
+    text-transform: uppercase;
+    font-weight: bold;
+}

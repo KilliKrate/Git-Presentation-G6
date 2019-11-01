@@ -56,6 +56,34 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'o-6' && !oshown[5]) {
+        setTimeout(function () {
+            consoleText(['git checkout [commit_id]'], 'o-checkout', ['white'], 500, 'console-checkout');
+            oshown[5] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-7' && !oshown[6]) {
+        setTimeout(function () {
+            consoleText(['git revert [commit_id]'], 'o-revert', ['white'], 500, 'console-revert');
+            oshown[6] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-8' && !oshown[7]) {
+        setTimeout(function () {
+            consoleText(['git reset [commit_id]'], 'o-reset', ['white'], 500, 'console-reset');
+            oshown[7] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-9' && !oshown[8]) {
+        setTimeout(function () {
+            consoleText(['git reset [commit_id] --hard'], 'o-reset-2', ['white'], 500, 'console-reset-2');
+            oshown[8] = true;
+        }, 500);
+    }
+
 
     /*
 
