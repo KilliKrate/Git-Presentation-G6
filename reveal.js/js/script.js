@@ -135,10 +135,25 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'l-7' && !lshown[5]) {
+        setTimeout(function () {
+            consoleText(['git checkout master'], 'l-merge-checkout', ['white'], 500, 'console-merge-checkout');
+            lshown[5] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-8' && !lshown[6]) {
+        setTimeout(function () {
+            consoleText(['git merge graphicalGUI'], 'l-merge', ['white'], 500, 'console-merge');
+            lshown[6] = true;
+        }, 500);
+    }
+
 
     /*
 
         DAVID
+
     */
 
     if (event.fragment.id === 'd-2' && !dshown[1]) {

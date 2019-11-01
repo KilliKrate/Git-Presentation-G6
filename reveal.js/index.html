@@ -893,7 +893,7 @@
 					<h1 style="color: #76ff03;" class="fragment fade-up">COMMIT</h1>
 				</section>
 				<section>
-					<img src="img/commit.png" style="height: 500px">
+					<img src="img/git-graph-commit.png" class="fragment def-img" style="height: 550px">
 				</section>
 			</section>
 			<section>
@@ -1068,10 +1068,80 @@
 						</div>
 					</div>
 				</section>
+				<section>
+					<img src="img/git-graph-branch.png" class="fragment def-img" style="height: 600px;">
+				</section>
 			</section>
 			<section>
-				<h3>SLIDE 16</h3>
-				<h4>Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)</h4>
+				<section>
+					<h3>
+						Merging <span style="color: #2196f3;">branches</span> is <span
+							style="color: #76ff03;">easy</span>
+					</h3>
+					<img src="img/merging.png" class="def-img inverted" style="height: 400px; margin-top: 30px">
+				</section>
+				<section>
+					<img src="img/git-graph-merge.png" class="fragment def-img" style="height: 580px;">
+				</section>
+				<section>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out" id="l-7">
+							<div class="terminal-box text-left" style="margin-top: 0px">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(graphicalGUI)</span><br>$&nbsp;
+									</span>
+									<span id="l-merge-checkout"></span>
+									<div class='console-underscore' id='console-merge-checkout'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out" id="l-8">
+							<div class="terminal-box text-left" style="margin-top: 0px">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+											style="color:#f21a28;">(master)</span><br>$&nbsp;
+									</span>
+									<span id="l-merge"></span>
+									<div class='console-underscore' id='console-merge'>&#95;</div>
+								</h6>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Automatic merge</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.50vh; margin-top: 60px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								<span style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git merge graphicalGUI
+						</h4><br><br>
+						<span style="letter-spacing: 0.05em;">
+							Merge made by the 'recursive' strategy<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;style.css | 2 <span style="color: #b7f8ab">+</span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;1 file changed, 2 insertions(+)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;create mode 100644 graphicalGUI<br>
+						</span>
+					</div>
+				</section>
+				<section>
+					<h3>Manual merge</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.50vh; margin-top: 30px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								<span style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git merge graphicalGUI
+						</h4><br><br>
+						<span style="letter-spacing: 0.05em;">
+							Auto-merging style.css<br><br>
+							CONFLICT (content): Merge conflict in styles.css<br><br>
+							Automatic merge failed; fix conflicts and then commit the result<br>
+						</span>
+					</div>
+				</section>
 			</section>
 			<section>
 				<h3>SLIDE 17</h3>
@@ -1151,35 +1221,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
-				{
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				},
-				{
-					src: 'plugin/title-footer/title-footer.js',
-					async: false,
-					callback: function () {
-						title_footer.initialize(
-							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-						);
-					}
-				},
-				{
-					src: 'plugin/typed/typed.js',
-					async: true,
-					callback: function () {
-						callTypedJs();
-					}
+				src: 'plugin/markdown/marked.js'
+			},
+			{
+				src: 'plugin/markdown/markdown.js'
+			},
+			{
+				src: 'plugin/notes/notes.js',
+				async: true
+			},
+			{
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			},
+			{
+				src: 'plugin/title-footer/title-footer.js',
+				async: false,
+				callback: function () {
+					title_footer.initialize(
+						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+					);
 				}
+			},
+			{
+				src: 'plugin/typed/typed.js',
+				async: true,
+				callback: function () {
+					callTypedJs();
+				}
+			}
 			]
 		});
 	</script>
