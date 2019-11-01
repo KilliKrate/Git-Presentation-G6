@@ -1,7 +1,7 @@
 /* Event Listeners: Fragments */
-
-var oshown = Array(10).fill(false);
+var oshown = Array(15).fill(false);
 var lshown = Array(20).fill(false);
+var lshown = Array(10).fill(false);
 var dshown = Array(10).fill(false);
 var ashown = Array(10).fill(false);
 
@@ -81,6 +81,41 @@ Reveal.addEventListener('fragmentshown', function (event) {
         setTimeout(function () {
             consoleText(['git reset [commit_id] --hard'], 'o-reset-2', ['white'], 500, 'console-reset-2');
             oshown[8] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-10' && !oshown[9]) {
+        setTimeout(function () {
+            consoleText(['git remote add [alias] [url]'], 'o-remote', ['white'], 500, 'console-remote');
+            oshown[9] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-11' && !oshown[10]) {
+        setTimeout(function () {
+            consoleText(['git remote add origin [url]'], 'o-remote-2', ['white'], 500, 'console-remote-2');
+            oshown[10] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-12' && !oshown[11]) {
+        setTimeout(function () {
+            consoleText(['git push origin master'], 'o-push', ['white'], 500, 'console-push');
+            oshown[11] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-13' && !oshown[12]) {
+        setTimeout(function () {
+            consoleText(['git clone [url]'], 'o-clone', ['white'], 500, 'console-clone');
+            oshown[12] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-14' && !oshown[13]) {
+        setTimeout(function () {
+            consoleText(['git remote -v'], 'o-remote-v', ['white'], 500, 'console-remote-v');
+            oshown[13] = true;
         }, 500);
     }
 
@@ -201,6 +236,36 @@ Reveal.addEventListener('fragmentshown', function (event) {
         setTimeout(function () {
             consoleText(['git config user.name'], 'd-config-u', ['white'], 500, 'console-config-u');
             dshown[3] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-5' && !dshown[4]) {
+        setTimeout(function () {
+            consoleText(['git status'], 'd-repo-first', ['white'], 500, 'console-repo-first');
+            dshown[4] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-6' && !dshown[5]) {
+        setTimeout(function () {
+            consoleText(['git push [URL] master'], 'd-repo-second', ['white'], 500, 'console-repo-second');
+            dshown[5] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-7' && !dshown[6]) {
+        setTimeout(function () {
+            consoleText(['git pull origin master'], 'd-pull', ['white'], 500, 'console-pull');
+            dshown[6] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-8' && !dshown[7]) {
+        setTimeout(function () {
+            consoleText(['git checkout -b my_branch'], 'd-branch', ['white'], 500, 'console-branch');
+            dshown[7] = true;
+        }, 500);
+    }
+    if (event.fragment.id === 'd-9' && !dshown[8]) {
+        setTimeout(function () {
+            consoleText(['git push origin my_branch'], 'd-push', ['white'], 500, 'console-push');
+            dshown[9] = true;
         }, 500);
     }
 

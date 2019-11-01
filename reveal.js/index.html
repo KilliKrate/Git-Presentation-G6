@@ -561,7 +561,8 @@
 					ma metterci sotto un video o riquadro che faccia vedere velocemente da dove
 					scaricare git
 				-->
-				<section data-background-iframe="https://git-scm.com/downloads" data-background-interactive>
+				<section>
+					<video src="img/git_download.mov" controls></video>
 					<div
 						style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 						<h2>That's all we need to do</h2>
@@ -1141,16 +1142,9 @@
 						</div>
 						<div class="fragment fade-in-then-out" id="a-5">
 							<h6>List branches</h6>
-							<div class="terminal-box text-left">
-								<h6 style="text-transform: none; display: inline"><span
-										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
-											style="color:#f21a28;">(master)</span><br>$&nbsp;
-									</span>
-									<span id="a-branch-list"></span>
-									<div class='console-underscore' id='console-branch-list'>&#95;</div>
-								</h6>
-							</div>
+							<span id="a-branch-list"></span>
+							<div class='console-underscore' id='console-branch-list'>&#95;</div>
+							</h6>
 						</div>
 					</div>
 				</section>
@@ -1257,16 +1251,211 @@
 				</section>
 			</section>
 			<section>
-				<h3>SLIDE 17</h3>
-				<h4>(PARTE 1) - Git & GitHub Tutorial for Beginners #10 - Introduction to GitHub</h4>
+				<section>
+					<h3 class="fragment fade-down">What is</h3><br>
+					<div class="fragment fade-up">
+						<h1 style="color:#76ff03">Github</h1>
+						<img src="img/github.png" class="def-img inverted" style="height: 300px">
+				</section>
+				<section>
+					<h3>Let's make an <span style="color: #2196f3">example</span></h3>
+					<div class="fragment">
+						<img src="img/github-example.png"
+							style="background: none; border: none; box-shadow: none; height: 550px;">
+					</div>
+				</section>
+				<section data-background-video="img/registration.mov">
+					<div
+						style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 25px; text-align: left;">
+						<h2>What we have to do</h2>
+					</div>
+				</section>
+				<section>
+					<h3>Now we have <div class="fragment fade-up" style="display:inline-block; color: #2196f3;">two
+						</div>
+						scenarios...</h3>
+					<div class="twocolumns" style="grid-column-gap:200px; margin-top: 80px;">
+						<div class="fragment fade-right">
+							<img src="img/local.png" class="inverted"
+								style="background: none; border: none; box-shadow: none; height: 300px;">
+							<h5>We <span style="color: #7c4dff">have</span> a local project</h5>
+						</div>
+						<div class="fragment fade-left">
+							<img src="img/noproject.png"
+								style="background: none; border: none; box-shadow: none; height: 300px;">
+							<h5>We <span style="color: #ff3d00">don't</span> have a project</h5>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>
+						<div class="fragment fade-right" style=" display:inline-block; color:#76ff03" ;>first</div>
+						<div class="fragment fade-left" style="display: inline-block;">case</div>
+					</h3>
+					<div class="fragment">
+						<img src="img/create-repo.PNG" class="def-img" style="height: 500px;">
+					</div>
+				</section>
+				<section>
+					<h3>And then...</h3>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out" id="d-5">
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="d-repo-first"></span>
+									<div class="console-underscore" id="console-repo-first">&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in" id="d-6">
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="d-repo-second"></span>
+									<div class="console-underscore" id="console-repo-second">&#95;</div>
+								</h6>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out" id="o-10">
+							<h3>We can also make an <span style="color: #2196f3;">alias</span>...</h3>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-remote"></span>
+									<div class="console-underscore" id="console-remote">&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out" id="o-11">
+							<h3>...the most common one is <span style="color: #ff3d00;">origin</span></h3>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-remote-2"></span>
+									<div class="console-underscore" id="console-remote-2">&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in" id="o-12">
+							<h3>No need to use the <span style="color: #7c4dff;">URL</span> anymore</h3>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-push"></span>
+									<div class="console-underscore" id="console-push">&#95;</div>
+								</h6>
+							</div>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
-				<h3>SLIDE 18</h3>
-				<h4>(PARTE 2) - Git & GitHub Tutorial for Beginners #10 - Introduction to GitHub</h4>
+				<section>
+					<h3>In case we <span style="color: #ff3d00"> don't</span> have a local project, we can create one
+						here...</h3>
+					<img src="img/create-repo.PNG" class="def-img" style="height: 400px;">
+				</section>
+				<section>
+					<h3>...but this time with a <span style="color: #76ff03;">readme</span></h3>
+					<img src="img/readme.PNG" class="def-img" style="height: 270px; margin-top: 60px;">
+				</section>
+				<section>
+					<h3>Now, we just need to <span style="color: #ff3d00;">clone</span> the repository</h3>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out">
+							<img src="img/clone.gif" class="def-img" style="height: 270px; margin-top: 60px;">
+						</div>
+						<div class="fragment fade-in" id="o-13" style="margin-top: 40px;">
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-clone"></span>
+									<div class="console-underscore" id="console-clone">&#95;</div>
+								</h6>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>GitHub will automatically define the <span style="color: #76ff03;">origin</span> alias</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.50vh; margin-top: 30px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								<span style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git remote -v
+						</h4><br><br>
+						<span style="letter-spacing: 0.05em; font-size: 30px;">
+							origin https://github.com/KilliKrate/Git-Presentation-G6.git (fetch)<br><br>
+							origin https://github.com/KilliKrate/Git-Presentation-G6.git (push)<br>
+						</span>
+					</div>
+				</section>
 			</section>
 			<section>
-				<h3>SLIDE 19</h3>
-				<h4>(PARTE 1) - Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub</h4>
+				<section>
+					<h3>How to work in a team</h3>
+				</section>
+				<section>
+					<h3><span style="color: #ff8a80">Always </span>do this before anything</h3>
+					<div class="fragment fade-in" id="d-7">
+						<div class="terminal-box text-left">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+									<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+								<span id="d-pull"></span>
+								<div class="console-underscore" id="console-pull">&#95;</div>
+							</h6>
+						</div>
+					</div>
+
+				</section>
+				<section>
+					<h3>We make our own branch</h3>
+					<div class="fragment fade-in" id="d-8">
+						<div class="terminal-box text-left">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+									<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+								<span id="d-branch"></span>
+								<div class="console-underscore" id="console-branch">&#95;</div>
+							</h6>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>When we're done</h3>
+					<div class="fragment fade-in" id="d-9">
+						<div class="terminal-box text-left">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+									<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+								<span id="d-push"></span>
+								<div class="console-underscore" id="console-push">&#95;</div>
+							</h6>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>And finally...</h3>
+					<img src="img/pull_request.PNG" style="def-img">
+				</section>
 			</section>
 			<section>
 				<section>
@@ -1338,35 +1527,35 @@
 			parallaxBackgroundHorizontal: 200,
 			parallaxBackgroundVertical: 50,
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			},
-			{
-				src: 'plugin/markdown/markdown.js'
-			},
-			{
-				src: 'plugin/notes/notes.js',
-				async: true
-			},
-			{
-				src: 'plugin/highlight/highlight.js',
-				async: true
-			},
-			{
-				src: 'plugin/title-footer/title-footer.js',
-				async: false,
-				callback: function () {
-					title_footer.initialize(
-						"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
-					);
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/title-footer/title-footer.js',
+					async: false,
+					callback: function () {
+						title_footer.initialize(
+							"Andrioaia Ovidiu, David Cirdan, Mateias Luciano and Xia Angelo"
+						);
+					}
+				},
+				{
+					src: 'plugin/typed/typed.js',
+					async: true,
+					callback: function () {
+						callTypedJs();
+					}
 				}
-			},
-			{
-				src: 'plugin/typed/typed.js',
-				async: true,
-				callback: function () {
-					callTypedJs();
-				}
-			}
 			]
 		});
 	</script>
