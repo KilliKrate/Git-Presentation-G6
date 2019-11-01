@@ -1,6 +1,6 @@
 /* Event Listeners: Fragments */
-
-var oshown = Array(10).fill(false);
+var oshown = Array(15).fill(false);
+var lshown = Array(20).fill(false);
 var lshown = Array(10).fill(false);
 var dshown = Array(10).fill(false);
 var ashown = Array(10).fill(false);
@@ -84,6 +84,41 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'o-10' && !oshown[9]) {
+        setTimeout(function () {
+            consoleText(['git remote add [alias] [url]'], 'o-remote', ['white'], 500, 'console-remote');
+            oshown[9] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-11' && !oshown[10]) {
+        setTimeout(function () {
+            consoleText(['git remote add origin [url]'], 'o-remote-2', ['white'], 500, 'console-remote-2');
+            oshown[10] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-12' && !oshown[11]) {
+        setTimeout(function () {
+            consoleText(['git push origin master'], 'o-push', ['white'], 500, 'console-push');
+            oshown[11] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-13' && !oshown[12]) {
+        setTimeout(function () {
+            consoleText(['git clone [url]'], 'o-clone', ['white'], 500, 'console-clone');
+            oshown[12] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'o-14' && !oshown[13]) {
+        setTimeout(function () {
+            consoleText(['git remote -v'], 'o-remote-v', ['white'], 500, 'console-remote-v');
+            oshown[13] = true;
+        }, 500);
+    }
+
 
     /*
 
@@ -163,6 +198,19 @@ Reveal.addEventListener('fragmentshown', function (event) {
         }, 500);
     }
 
+    if (event.fragment.id === 'l-11' && !lshown[9]) {
+        setTimeout(function () {
+            consoleText(['git add .'], 'l-merge-add', ['white'], 500, 'console-merge-add');
+            lshown[9] = true;
+        }, 500);
+    }
+
+    if (event.fragment.id === 'l-12' && !lshown[10]) {
+        setTimeout(function () {
+            consoleText(['git commit'], 'l-merge-commit', ['white'], 500, 'console-merge-commit');
+            lshown[10] = true;
+        }, 500);
+    }
 
     /*
 

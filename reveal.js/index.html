@@ -1198,8 +1198,8 @@
 						</h4><br><br>
 						<span style="letter-spacing: 0.05em;">
 							Merge made by the 'recursive' strategy<br>
-							&nbsp;&nbsp;&nbsp;&nbsp;style.css | 2 <span style="color: #b7f8ab">+</span><br>
-							&nbsp;&nbsp;&nbsp;&nbsp;1 file changed, 2 insertions(+)<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;style.css | 3 <span style="color: #b7f8ab">+</span><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;1 file changed, 3 insertions(+)<br>
 							&nbsp;&nbsp;&nbsp;&nbsp;create mode 100644 graphicalGUI<br>
 						</span>
 					</div>
@@ -1217,6 +1217,33 @@
 							CONFLICT (content): Merge conflict in styles.css<br><br>
 							Automatic merge failed; fix conflicts and then commit the result<br>
 						</span>
+					</div>
+				</section>
+				<section>
+					<img class="fragment" src="img/git-merge-conflict-vsc.png">
+					<img class="fragment" src="img/git-merge-conflict-vsc-extended.png">
+				</section>
+				<section>
+					<h3>Finishing the manual merge</h3>
+					<div class="fragment-stack">
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-11">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-merge-add"></span>
+								<div class='console-underscore' id='console-merge-add'>&#95;</div>
+							</h6>
+						</div>
+						<div class="terminal-box text-left fragment fade-in-then-out" id="l-12">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span> <span
+										style="color:#f21a28;">(master)</span><br>$&nbsp;
+								</span>
+								<span id="l-merge-commit"></span>
+								<div class='console-underscore' id='console-merge-commit'>&#95;</div>
+							</h6>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -1294,12 +1321,89 @@
 					</div>
 				</section>
 				<section>
-					<h3>We can also make an <span style="color: #2196f3;">alias</span> to avoid repeating the URL</h3>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out" id="o-10">
+							<h3>We can also make an <span style="color: #2196f3;">alias</span>...</h3>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-remote"></span>
+									<div class="console-underscore" id="console-remote">&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in-then-out" id="o-11">
+							<h3>...the most common one is <span style="color: #ff3d00;">origin</span></h3>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-remote-2"></span>
+									<div class="console-underscore" id="console-remote-2">&#95;</div>
+								</h6>
+							</div>
+						</div>
+						<div class="fragment fade-in" id="o-12">
+							<h3>No need to use the <span style="color: #7c4dff;">URL</span> anymore</h3>
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-push"></span>
+									<div class="console-underscore" id="console-push">&#95;</div>
+								</h6>
+							</div>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section>
-				<h3>SLIDE 18</h3>
-				<h4>(PARTE 2) - Git & GitHub Tutorial for Beginners #10 - Introduction to GitHub</h4>
+				<section>
+					<h3>In case we <span style="color: #ff3d00"> don't</span> have a local project, we can create one
+						here...</h3>
+					<img src="img/create-repo.PNG" class="def-img" style="height: 400px;">
+				</section>
+				<section>
+					<h3>...but this time with a <span style="color: #76ff03;">readme</span></h3>
+					<img src="img/readme.PNG" class="def-img" style="height: 270px; margin-top: 60px;">
+				</section>
+				<section>
+					<h3>Now, we just need to <span style="color: #ff3d00;">clone</span> the repository</h3>
+					<div class="fragment-stack">
+						<div class="fragment fade-in-then-out">
+							<img src="img/clone.gif" class="def-img" style="height: 270px; margin-top: 60px;">
+						</div>
+						<div class="fragment fade-in" id="o-13" style="margin-top: 40px;">
+							<div class="terminal-box text-left">
+								<h6 style="text-transform: none; display: inline"><span
+										style="color: #76ff03;">bob@group6:
+										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+									<span id="o-clone"></span>
+									<div class="console-underscore" id="console-clone">&#95;</div>
+								</h6>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>GitHub will automatically define the <span style="color: #76ff03;">origin</span> alias</h3>
+					<div class="terminal-box fragment fade-down text-left" style="font-size: 3.50vh; margin-top: 30px">
+						<h4 style="text-transform: none; display: inline">
+							<span style="color: #76ff03;">bob@group6:
+								<span style="color: #2196f3;">/Git-G6/reveal.js</span>$
+								<span style="color:#f21a28;">(master)</span><br>$&nbsp; </span>git remote -v
+						</h4><br><br>
+						<span style="letter-spacing: 0.05em; font-size: 30px;">
+							origin https://github.com/KilliKrate/Git-Presentation-G6.git (fetch)<br><br>
+							origin https://github.com/KilliKrate/Git-Presentation-G6.git (push)<br>
+						</span>
+					</div>
+				</section>
 			</section>
 			<section>
 				<section>
@@ -1308,45 +1412,42 @@
 				<section>
 					<h3><span style="color: #ff8a80">Always </span>do this before anything</h3>
 					<div class="fragment fade-in" id="d-7">
-							<div class="terminal-box text-left">
-								<h6 style="text-transform: none; display: inline"><span
-										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
-										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
-									<span id="d-pull"></span>
-									<div class="console-underscore" id="console-pull">&#95;</div>
-								</h6>
-							</div>
+						<div class="terminal-box text-left">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+									<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+								<span id="d-pull"></span>
+								<div class="console-underscore" id="console-pull">&#95;</div>
+							</h6>
 						</div>
-					
+					</div>
+
 				</section>
 				<section>
 					<h3>We make our own branch</h3>
 					<div class="fragment fade-in" id="d-8">
-							<div class="terminal-box text-left">
-								<h6 style="text-transform: none; display: inline"><span
-										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
-										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
-									<span id="d-branch"></span>
-									<div class="console-underscore" id="console-branch">&#95;</div>
-								</h6>
-							</div>
+						<div class="terminal-box text-left">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+									<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+								<span id="d-branch"></span>
+								<div class="console-underscore" id="console-branch">&#95;</div>
+							</h6>
 						</div>
+					</div>
 				</section>
 				<section>
 					<h3>When we're done</h3>
 					<div class="fragment fade-in" id="d-9">
-							<div class="terminal-box text-left">
-								<h6 style="text-transform: none; display: inline"><span
-										style="color: #76ff03;">bob@group6:
-										<span style="color: #2196f3;">/Git-G6/reveal.js</span>
-										<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
-									<span id="d-push"></span>
-									<div class="console-underscore" id="console-push">&#95;</div>
-								</h6>
-							</div>
+						<div class="terminal-box text-left">
+							<h6 style="text-transform: none; display: inline"><span style="color: #76ff03;">bob@group6:
+									<span style="color: #2196f3;">/Git-G6/reveal.js</span>
+									<span style="color:#f21a28;">(master)</span><br>$&nbsp;</span>
+								<span id="d-push"></span>
+								<div class="console-underscore" id="console-push">&#95;</div>
+							</h6>
 						</div>
+					</div>
 				</section>
 				<section>
 					<h3>And finally...</h3>
@@ -1357,6 +1458,10 @@
 				<section>
 					<h3>Merge a <span style="color: #2196f3;">pull</span> request</h3>
 					<img src="img/git-pull-merge.gif" style="height: 475px;">
+				</section>
+				<section>
+					<h3>Update a <span style="color: #2196f3;">pull</span> request</h3>
+					<img src="img/git-pull-merge-push.gif" class="def-img">
 				</section>
 			</section>
 			<section>
